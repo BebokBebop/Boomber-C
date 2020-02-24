@@ -1,0 +1,76 @@
+\hypertarget{struct_bomb}{}\section{Dokumentacja struktury Bomb}
+\label{struct_bomb}\index{Bomb@{Bomb}}
+
+
+{\ttfamily \#include $<$enums\+Structs\+Macros.\+h$>$}
+
+\subsection*{Pola danych}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_bomb_a62a917b182cdb7bfcb3238b8a3b9eb79}{size}}
+\item 
+int \mbox{\hyperlink{struct_bomb_ae1bf7a018e0fb6b751320e41e139b0d0}{fire\+Cross}} \mbox{[}4\mbox{]}
+\item 
+\mbox{\hyperlink{struct_x_y}{XY}} \mbox{\hyperlink{struct_bomb_aee2e79180661220dc9bd5639fbfc25df}{coords}}
+\item 
+double \mbox{\hyperlink{struct_bomb_abaeef5c4cd2e2e25688ba625fe13bcc3}{explosion\+Timer}}
+\item 
+double \mbox{\hyperlink{struct_bomb_aa2ac1f6a85cb9e141f3a8313f05091cc}{kick\+Timer}}
+\item 
+\mbox{\hyperlink{enums_structs_macros_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{struct_bomb_a0bf8b6ceb32adcee6dad5b4f32605ce2}{kick\+Direction}}
+\item 
+\mbox{\hyperlink{enums_structs_macros_8h_a85862f8bba17794a87d664e16fe33acb}{bomb\+State}} \mbox{\hyperlink{struct_bomb_a2fa3684effcc6e03d4ca9d47cc92c0b4}{stat\+Flag}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Bomba i jej dane 
+
+\subsection{Dokumentacja pól}
+\mbox{\Hypertarget{struct_bomb_aee2e79180661220dc9bd5639fbfc25df}\label{struct_bomb_aee2e79180661220dc9bd5639fbfc25df}} 
+\index{Bomb@{Bomb}!coords@{coords}}
+\index{coords@{coords}!Bomb@{Bomb}}
+\subsubsection{\texorpdfstring{coords}{coords}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_x_y}{XY}} Bomb\+::coords}
+
+Koordynaty bomby wzgledem mapy. \mbox{\Hypertarget{struct_bomb_abaeef5c4cd2e2e25688ba625fe13bcc3}\label{struct_bomb_abaeef5c4cd2e2e25688ba625fe13bcc3}} 
+\index{Bomb@{Bomb}!explosion\+Timer@{explosion\+Timer}}
+\index{explosion\+Timer@{explosion\+Timer}!Bomb@{Bomb}}
+\subsubsection{\texorpdfstring{explosion\+Timer}{explosionTimer}}
+{\footnotesize\ttfamily double Bomb\+::explosion\+Timer}
+
+Czas do eksplozji lub czas po eksplozji. \mbox{\Hypertarget{struct_bomb_ae1bf7a018e0fb6b751320e41e139b0d0}\label{struct_bomb_ae1bf7a018e0fb6b751320e41e139b0d0}} 
+\index{Bomb@{Bomb}!fire\+Cross@{fire\+Cross}}
+\index{fire\+Cross@{fire\+Cross}!Bomb@{Bomb}}
+\subsubsection{\texorpdfstring{fire\+Cross}{fireCross}}
+{\footnotesize\ttfamily int Bomb\+::fire\+Cross\mbox{[}4\mbox{]}}
+
+Gdzie po wycuchu siegnal ogien bomby w 4 kierunkach. \mbox{\Hypertarget{struct_bomb_a0bf8b6ceb32adcee6dad5b4f32605ce2}\label{struct_bomb_a0bf8b6ceb32adcee6dad5b4f32605ce2}} 
+\index{Bomb@{Bomb}!kick\+Direction@{kick\+Direction}}
+\index{kick\+Direction@{kick\+Direction}!Bomb@{Bomb}}
+\subsubsection{\texorpdfstring{kick\+Direction}{kickDirection}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enums_structs_macros_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Bomb\+::kick\+Direction}
+
+Kierunek przesuwania bomby. \mbox{\Hypertarget{struct_bomb_aa2ac1f6a85cb9e141f3a8313f05091cc}\label{struct_bomb_aa2ac1f6a85cb9e141f3a8313f05091cc}} 
+\index{Bomb@{Bomb}!kick\+Timer@{kick\+Timer}}
+\index{kick\+Timer@{kick\+Timer}!Bomb@{Bomb}}
+\subsubsection{\texorpdfstring{kick\+Timer}{kickTimer}}
+{\footnotesize\ttfamily double Bomb\+::kick\+Timer}
+
+Kiedy ostatni raz bomba byla przesunieta. \mbox{\Hypertarget{struct_bomb_a62a917b182cdb7bfcb3238b8a3b9eb79}\label{struct_bomb_a62a917b182cdb7bfcb3238b8a3b9eb79}} 
+\index{Bomb@{Bomb}!size@{size}}
+\index{size@{size}!Bomb@{Bomb}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int Bomb\+::size}
+
+Zasieg bomby. \mbox{\Hypertarget{struct_bomb_a2fa3684effcc6e03d4ca9d47cc92c0b4}\label{struct_bomb_a2fa3684effcc6e03d4ca9d47cc92c0b4}} 
+\index{Bomb@{Bomb}!stat\+Flag@{stat\+Flag}}
+\index{stat\+Flag@{stat\+Flag}!Bomb@{Bomb}}
+\subsubsection{\texorpdfstring{stat\+Flag}{statFlag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enums_structs_macros_8h_a85862f8bba17794a87d664e16fe33acb}{bomb\+State}} Bomb\+::stat\+Flag}
+
+Status bomby. 
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enums_structs_macros_8h}{enums\+Structs\+Macros.\+h}}\end{DoxyCompactItemize}

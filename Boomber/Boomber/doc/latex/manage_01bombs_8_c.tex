@@ -1,0 +1,147 @@
+\hypertarget{manage_01bombs_8_c}{}\section{Dokumentacja pliku manage bombs.\+C}
+\label{manage_01bombs_8_c}\index{manage bombs.\+C@{manage bombs.\+C}}
+{\ttfamily \#include \char`\"{}enums\+Structs\+Macros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}manage bombs.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L\+F\+W\textbackslash{}glfw3.\+h$>$}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{manage_01bombs_8_c_af70d9453740a7975f3c98ba4e7509f68}{get\+Bomb\+ID}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player, int x, int y)
+\item 
+void \mbox{\hyperlink{manage_01bombs_8_c_aca788eb57bf358d97e52b9073b2e77b4}{move\+Tile}} (enum \mbox{\hyperlink{enums_structs_macros_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} dir, \mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$curr\+Bomb, \mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$bitmap, int grid\+Size)
+\item 
+void \mbox{\hyperlink{manage_01bombs_8_c_adcc856d87c879a7c42cbfbca9f1743ac}{move\+Check\+Explode\+And\+Clean\+Up\+Bombs}} (\mbox{\hyperlink{struct_player}{Player}} $\ast$player, \mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$bitmap, int grid\+Size)
+\item 
+void \mbox{\hyperlink{manage_01bombs_8_c_a5213a6ff696c7e7d6905b083246a6fe7}{clean\+Tile}} (\mbox{\hyperlink{structtile}{tile}} $\ast$curr\+Tile)
+\item 
+void \mbox{\hyperlink{manage_01bombs_8_c_a4681d0dec04b988bc375541bf030d779}{move\+Bomb\+Data}} (\mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$A, \mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$B)
+\item 
+void \mbox{\hyperlink{manage_01bombs_8_c_a1f413c301f0ada039af77930818a86e7}{clean\+Up}} (int current\+Bomb\+ID, \mbox{\hyperlink{struct_player}{Player}} $\ast$player, \mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$bitmap)
+\item 
+void \mbox{\hyperlink{manage_01bombs_8_c_a2b0c8f6d639430b3aace67c461f3bc56}{spread\+Fire}} (\mbox{\hyperlink{structtile}{tile}} $\ast$curr\+Tile, int $\ast$breaker)
+\item 
+void \mbox{\hyperlink{manage_01bombs_8_c_a9bfcb5bfdd7a3ca96bcd86059a4933db}{explode\+Bomb\+Add\+Points}} (\mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$bomb, \mbox{\hyperlink{struct_player}{Player}} $\ast$player, \mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$bitmap, int grid\+Size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{manage_01bombs_8_c_a5213a6ff696c7e7d6905b083246a6fe7}\label{manage_01bombs_8_c_a5213a6ff696c7e7d6905b083246a6fe7}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!clean\+Tile@{clean\+Tile}}
+\index{clean\+Tile@{clean\+Tile}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{clean\+Tile()}{cleanTile()}}
+{\footnotesize\ttfamily void clean\+Tile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$}]{curr\+Tile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Zmniejsza ilosc warstw ognia na kafelku i zamienia go na kafelek typu \textquotesingle{}path\+Tile\textquotesingle{}, jesli ilosc warstw ognia sie wyzeruje. 
+\begin{DoxyParams}{Parametry}
+{\em curr\+Tile} & Kafelek do obsluzenia. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{manage_01bombs_8_c_a1f413c301f0ada039af77930818a86e7}\label{manage_01bombs_8_c_a1f413c301f0ada039af77930818a86e7}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!clean\+Up@{clean\+Up}}
+\index{clean\+Up@{clean\+Up}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{clean\+Up()}{cleanUp()}}
+{\footnotesize\ttfamily void clean\+Up (\begin{DoxyParamCaption}\item[{int}]{current\+Bomb\+ID,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$}]{bitmap }\end{DoxyParamCaption})}
+
+Usuwa ogien pozostaly po eksplozji bomby, jesli minelo dosc duzo czasu od jej wybuchu 
+\begin{DoxyParams}{Parametry}
+{\em current\+Bomb\+ID} & indeks w tablicy bomb gracza aktualnej bomby \\
+\hline
+{\em player} & wskaznik na gracza \\
+\hline
+{\em bitmap} & wskaznik na mape gry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{manage_01bombs_8_c_a9bfcb5bfdd7a3ca96bcd86059a4933db}\label{manage_01bombs_8_c_a9bfcb5bfdd7a3ca96bcd86059a4933db}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!explode\+Bomb\+Add\+Points@{explode\+Bomb\+Add\+Points}}
+\index{explode\+Bomb\+Add\+Points@{explode\+Bomb\+Add\+Points}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{explode\+Bomb\+Add\+Points()}{explodeBombAddPoints()}}
+{\footnotesize\ttfamily void explode\+Bomb\+Add\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$}]{bomb,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$}]{bitmap,  }\item[{int}]{grid\+Size }\end{DoxyParamCaption})}
+
+Zmienia status bomby na \textquotesingle{}exploded\textquotesingle{}, roznosi ogien po mapie zgodnie z zasiegiem danej bomby zwieksza ilosc wolnych bomb gracza 
+\begin{DoxyParams}{Parametry}
+{\em bomb} & wskaznik na bombe, ktora nalezy eksplodowac \\
+\hline
+{\em player} & wskaznik na gracza \\
+\hline
+{\em bitmap} & wskaznik na mape gry \\
+\hline
+{\em grid\+Size} & wielkosc mapy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{manage_01bombs_8_c_af70d9453740a7975f3c98ba4e7509f68}\label{manage_01bombs_8_c_af70d9453740a7975f3c98ba4e7509f68}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!get\+Bomb\+ID@{get\+Bomb\+ID}}
+\index{get\+Bomb\+ID@{get\+Bomb\+ID}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{get\+Bomb\+I\+D()}{getBombID()}}
+{\footnotesize\ttfamily int get\+Bomb\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Znajduje ID w tablicy bomb gracza bomby o okreslonych koordynatach 
+\begin{DoxyParams}{Parametry}
+{\em player} & wskaznik na gracza \\
+\hline
+{\em x} & koordynat szerokosci wzgledem mapy \\
+\hline
+{\em y} & koordynat wysokosci wzgledem mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+indeks, pod ktorym w tablicy bomb gracza znajduje sie bomba o podanych koordynatach 
+\end{DoxyReturn}
+\mbox{\Hypertarget{manage_01bombs_8_c_a4681d0dec04b988bc375541bf030d779}\label{manage_01bombs_8_c_a4681d0dec04b988bc375541bf030d779}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!move\+Bomb\+Data@{move\+Bomb\+Data}}
+\index{move\+Bomb\+Data@{move\+Bomb\+Data}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{move\+Bomb\+Data()}{moveBombData()}}
+{\footnotesize\ttfamily void move\+Bomb\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$}]{A,  }\item[{\mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Przekazuje dane bomby A do bomby B. 
+\begin{DoxyParams}{Parametry}
+{\em A} & bomba, ktorej dane sa przekazywane \\
+\hline
+{\em B} & bomba, do ktorej dane sa przekazywane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{manage_01bombs_8_c_adcc856d87c879a7c42cbfbca9f1743ac}\label{manage_01bombs_8_c_adcc856d87c879a7c42cbfbca9f1743ac}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!move\+Check\+Explode\+And\+Clean\+Up\+Bombs@{move\+Check\+Explode\+And\+Clean\+Up\+Bombs}}
+\index{move\+Check\+Explode\+And\+Clean\+Up\+Bombs@{move\+Check\+Explode\+And\+Clean\+Up\+Bombs}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{move\+Check\+Explode\+And\+Clean\+Up\+Bombs()}{moveCheckExplodeAndCleanUpBombs()}}
+{\footnotesize\ttfamily void move\+Check\+Explode\+And\+Clean\+Up\+Bombs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$}]{bitmap,  }\item[{int}]{grid\+Size }\end{DoxyParamCaption})}
+
+Obsluguje bomby -\/ przesuwa je, sprawdza, czy ktoras nie stoi na ogniu i nie musi wybuchnac, czysci kafelki po bombach, ktore wybuchly i minelo dosc duzo czasu od ich wybuchu 
+\begin{DoxyParams}{Parametry}
+{\em player} & wskaznik na gracza \\
+\hline
+{\em bitmap} & wskaznik na mape gry \\
+\hline
+{\em grid\+Size} & wielkosc mapy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{manage_01bombs_8_c_aca788eb57bf358d97e52b9073b2e77b4}\label{manage_01bombs_8_c_aca788eb57bf358d97e52b9073b2e77b4}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!move\+Tile@{move\+Tile}}
+\index{move\+Tile@{move\+Tile}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{move\+Tile()}{moveTile()}}
+{\footnotesize\ttfamily void move\+Tile (\begin{DoxyParamCaption}\item[{enum \mbox{\hyperlink{enums_structs_macros_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{dir,  }\item[{\mbox{\hyperlink{struct_bomb}{Bomb}} $\ast$}]{curr\+Bomb,  }\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$}]{bitmap,  }\item[{int}]{grid\+Size }\end{DoxyParamCaption})}
+
+Jesli moze, to przesuwa bombe o jeden kafelek 
+\begin{DoxyParams}{Parametry}
+{\em dir} & kierunek poruszania sie bomby \\
+\hline
+{\em curr\+Bomb} & wskaznik na aktualnie przesuwana bombe \\
+\hline
+{\em bitmap} & wskaznik na mape gry \\
+\hline
+{\em grid\+Size} & wielkosc mapy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{manage_01bombs_8_c_a2b0c8f6d639430b3aace67c461f3bc56}\label{manage_01bombs_8_c_a2b0c8f6d639430b3aace67c461f3bc56}} 
+\index{manage bombs.\+C@{manage bombs.\+C}!spread\+Fire@{spread\+Fire}}
+\index{spread\+Fire@{spread\+Fire}!manage bombs.\+C@{manage bombs.\+C}}
+\subsubsection{\texorpdfstring{spread\+Fire()}{spreadFire()}}
+{\footnotesize\ttfamily void spread\+Fire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$}]{curr\+Tile,  }\item[{int $\ast$}]{breaker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Probuje dany kafelek zamienic na \textquotesingle{}fire\+Tile\textquotesingle{} lub \textquotesingle{}fired\+Box\textquotesingle{}, jesli sie uda zamienic na \textquotesingle{}fire\+Tile\textquotesingle{}, to zwraca $\ast$breaker = 0, czyli ogien moze isc dalej, jesli sie uda zamienic na \textquotesingle{}fired\+Box\textquotesingle{}, to zwraca $\ast$breaker = 1, czyli ogien nie isc dalej, jesli sie nie uda, to zwraca $\ast$breaker = 2, czyli ogien nie siegnal do tego kafelka i nie moze isc dalej 
+\begin{DoxyParams}[1]{Parametry}
+ & {\em curr\+Tile} & wskaznik na aktualny kafelek do sprawdzenia \\
+\hline
+\mbox{\tt out}  & {\em breaker} & ustawia jego wartosc na 1 jesli dosiegnie pudelka \\
+\hline
+\end{DoxyParams}

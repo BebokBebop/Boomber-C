@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Boomberman: Dokumentacja pliku Enemies.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Boomberman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Enemies.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="enums_structs_macros_8h_source.html">enumsStructsMacros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_enemies_8h_source.html">Enemies.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;GLFW/glfw3.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a7deeed86cc3886f6f9b0e4916ab6ad84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#a7deeed86cc3886f6f9b0e4916ab6ad84">initEnemies</a> (<a class="el" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], <a class="el" href="structtile.html">tile</a> *bitmap, int howMany, int gridSize)</td></tr>
+<tr class="separator:a7deeed86cc3886f6f9b0e4916ab6ad84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39567aeae0ae70e0860e2651e61e024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#ac39567aeae0ae70e0860e2651e61e024">resetEnemyStatics</a> ()</td></tr>
+<tr class="separator:ac39567aeae0ae70e0860e2651e61e024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42ea38d9134354e0c75d95117e3d06c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#ac42ea38d9134354e0c75d95117e3d06c">addEnemy</a> (<a class="el" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], int ID, <a class="el" href="enums_structs_macros_8h.html#ac3e413a86119db4b031458c7259e268e">EnemyType</a> type, <a class="el" href="struct_x_y.html">XY</a> coords, <a class="el" href="enums_structs_macros_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> dir)</td></tr>
+<tr class="separator:ac42ea38d9134354e0c75d95117e3d06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4cc5ffc3c0e591789e94f3d701e9e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#a6c4cc5ffc3c0e591789e94f3d701e9e7">moveBlind</a> (<a class="el" href="struct_enemy.html">Enemy</a> *enemy, <a class="el" href="structtile.html">tile</a> **bitmap, int gridSize)</td></tr>
+<tr class="separator:a6c4cc5ffc3c0e591789e94f3d701e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ed02f60d706f61702f2f8bde1d8437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#a39ed02f60d706f61702f2f8bde1d8437">moveRandom</a> (<a class="el" href="struct_enemy.html">Enemy</a> *enemy, <a class="el" href="structtile.html">tile</a> **bitmap, int gridSize)</td></tr>
+<tr class="separator:a39ed02f60d706f61702f2f8bde1d8437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c7f1e643eed872226d910c298bbf24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#ab2c7f1e643eed872226d910c298bbf24">pointTowardsPlayerIfPossible</a> (<a class="el" href="struct_enemy.html">Enemy</a> *enemy, <a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:ab2c7f1e643eed872226d910c298bbf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f94c8a31f6cab79db629884ff69fae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#a9f94c8a31f6cab79db629884ff69fae0">moveCharger</a> (<a class="el" href="struct_enemy.html">Enemy</a> *enemy, <a class="el" href="struct_player.html">Player</a> *player, <a class="el" href="structtile.html">tile</a> **bitmap, int gridSize)</td></tr>
+<tr class="separator:a9f94c8a31f6cab79db629884ff69fae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92eb1f9cee7671cad8156f63ae7958a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#a92eb1f9cee7671cad8156f63ae7958a9">moveEnemy</a> (<a class="el" href="struct_enemy.html">Enemy</a> *enemy, int charge, <a class="el" href="structtile.html">tile</a> **bitmap, int gridSize)</td></tr>
+<tr class="separator:a92eb1f9cee7671cad8156f63ae7958a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab902a925519b159e83619ce1685ee9dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#ab902a925519b159e83619ce1685ee9dc">manageEnemiesAndScore</a> (<a class="el" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], <a class="el" href="struct_player.html">Player</a> *player, <a class="el" href="structtile.html">tile</a> **bitmap, int howMany, int gridSize, int reset)</td></tr>
+<tr class="separator:ab902a925519b159e83619ce1685ee9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdd1ba30cf93846f4eab65532cbef5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_enemies_8c.html#afcdd1ba30cf93846f4eab65532cbef5e">dropEnemies</a> (<a class="el" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], <a class="el" href="structtile.html">tile</a> **bitmap, int howMany, int gridSize)</td></tr>
+<tr class="separator:afcdd1ba30cf93846f4eab65532cbef5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ac42ea38d9134354e0c75d95117e3d06c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42ea38d9134354e0c75d95117e3d06c">&#9670;&nbsp;</a></span>addEnemy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addEnemy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a>&#160;</td>
+          <td class="paramname"><em>enemyArray</em>[MAX_ENEMIES_PER_MAP], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_structs_macros_8h.html#ac3e413a86119db4b031458c7259e268e">EnemyType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_x_y.html">XY</a>&#160;</td>
+          <td class="paramname"><em>coords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_structs_macros_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td>
+          <td class="paramname"><em>dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dodaje nowego przeciwnika do tablicy i ustawia jego dane. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemyArray</td><td>Tablica przechowujaca dane wszystkich przeciwnikow. </td></tr>
+    <tr><td class="paramname">ID</td><td>Indeks nowego przeciwnika w tablicy przeciwnikow. </td></tr>
+    <tr><td class="paramname">type</td><td>Typ przeciwnika. </td></tr>
+    <tr><td class="paramname">coords</td><td>Koordynaty nowegp przeciwnika wzgledem mapy. </td></tr>
+    <tr><td class="paramname">dir</td><td>Kiedunek poruszania sie nowego przeciwnika. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afcdd1ba30cf93846f4eab65532cbef5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdd1ba30cf93846f4eab65532cbef5e">&#9670;&nbsp;</a></span>dropEnemies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dropEnemies </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a>&#160;</td>
+          <td class="paramname"><em>enemyArray</em>[MAX_ENEMIES_PER_MAP], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>howMany</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stawia nowych przeciwnikow na planszy. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemyArray</td><td>Tablica przechowujaca dane wszystkich przeciwnikow. </td></tr>
+    <tr><td class="paramname">bitmap</td><td>Wskaznik na mape gry. </td></tr>
+    <tr><td class="paramname">howMany</td><td>Ile przeciwnikow jest do wygenerowania. </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Wielkosc mapy (NxN). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7deeed86cc3886f6f9b0e4916ab6ad84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7deeed86cc3886f6f9b0e4916ab6ad84">&#9670;&nbsp;</a></span>initEnemies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initEnemies </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a>&#160;</td>
+          <td class="paramname"><em>enemyArray</em>[MAX_ENEMIES_PER_MAP], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> *&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>howMany</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicjalizuje rzeczy wymagajace inicjalizacji z tego pliku. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemyArray</td><td>Tablica przechowujaca dane wszystkich przeciwnikow. </td></tr>
+    <tr><td class="paramname">bitmap</td><td>Wskaznik na mape gry. </td></tr>
+    <tr><td class="paramname">howMany</td><td>Ile przeciwnikow jest do wygenerowania. </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Wielkosc mapy (NxN). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab902a925519b159e83619ce1685ee9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab902a925519b159e83619ce1685ee9dc">&#9670;&nbsp;</a></span>manageEnemiesAndScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int manageEnemiesAndScore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a>&#160;</td>
+          <td class="paramname"><em>enemyArray</em>[MAX_ENEMIES_PER_MAP], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>howMany</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obsluguje przeciwnikow, tj. przesuwa ich, sprawdza czy nie zostali zabici przez gracza (stoja na ogniu), dodaje punkty graczowi, jesli przeciwnik umiera i sprawdza, czy ktorys z przeciwnikow jeszcze zyje. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemyArray</td><td>tablica przechowujaca dane wszystkich przeciwnikow. </td></tr>
+    <tr><td class="paramname">player</td><td>Wskaznik na gracza. </td></tr>
+    <tr><td class="paramname">bitmap</td><td>Wskaznik na mape gry. </td></tr>
+    <tr><td class="paramname">howMany</td><td>Ile jest przeciwnikow. </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Wielkosc mapy (NxN). </td></tr>
+    <tr><td class="paramname">reset</td><td>Jesli 1 to nalezy zresetowac wartosci statycze w funkcji i z niej wyjsc, bez wykonywania reszty jej ciala. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Liczba 0 kiedy zyje przynajmniej jeden przeciwnik, liczba 1 jesli wszyscy sa martwi. </dd></dl>
+
+</div>
+</div>
+<a id="a6c4cc5ffc3c0e591789e94f3d701e9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4cc5ffc3c0e591789e94f3d701e9e7">&#9670;&nbsp;</a></span>moveBlind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moveBlind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a> *&#160;</td>
+          <td class="paramname"><em>enemy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przesuwa przeciwnika typu 'blind' lub przeciwnika typu 'charger' w pierwszej jego fazie. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemy</td><td>Wskaznik na przeciwnika do przesuniecia. </td></tr>
+    <tr><td class="paramname">bitmap</td><td>Wskaznik na mape gry. </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Wielkosc mapy (NxN). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f94c8a31f6cab79db629884ff69fae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f94c8a31f6cab79db629884ff69fae0">&#9670;&nbsp;</a></span>moveCharger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moveCharger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a> *&#160;</td>
+          <td class="paramname"><em>enemy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przesuwa przeciwnika typu 'charger' w jego drugiej fazie. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemy</td><td>Wskaznik na przeciwnika do przesuniecia. </td></tr>
+    <tr><td class="paramname">player</td><td>Wskaznik na gracza. </td></tr>
+    <tr><td class="paramname">bitmap</td><td>Wskaznik na mape gry. </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Wielkosc mapy (NxN). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92eb1f9cee7671cad8156f63ae7958a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92eb1f9cee7671cad8156f63ae7958a9">&#9670;&nbsp;</a></span>moveEnemy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moveEnemy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a> *&#160;</td>
+          <td class="paramname"><em>enemy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rush</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Probuje przesunac przeciwnika w jego kierunku o jeden kafelek. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemy</td><td>Wskaznik na przeciwnika do przesuniecia. </td></tr>
+    <tr><td class="paramname">rush</td><td>Przelacznik, czy przeciwnik ma sie przebijac przez pudelka. </td></tr>
+    <tr><td class="paramname">bitmap</td><td>Wskaznik na mape gry. </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Wielkosc mapy (NxN). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Liczba 0 jesli sie nie udalo przesunac przeciwnika, liczba 1 w przypadku kiedy sie udalo, 2 jesli kierunek w ktorym probowano sie poruszyc byl inny przeciwnik. </dd></dl>
+
+</div>
+</div>
+<a id="a39ed02f60d706f61702f2f8bde1d8437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ed02f60d706f61702f2f8bde1d8437">&#9670;&nbsp;</a></span>moveRandom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moveRandom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a> *&#160;</td>
+          <td class="paramname"><em>enemy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przesuwa przeciwnika typu 'random'. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemy</td><td>Wskaznik na przeciwnika do przesuniecia. </td></tr>
+    <tr><td class="paramname">bitmap</td><td>Wskaznik na mape gry. </td></tr>
+    <tr><td class="paramname">gridSize</td><td>Wielkosc mapy (NxN). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab2c7f1e643eed872226d910c298bbf24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c7f1e643eed872226d910c298bbf24">&#9670;&nbsp;</a></span>pointTowardsPlayerIfPossible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pointTowardsPlayerIfPossible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_enemy.html">Enemy</a> *&#160;</td>
+          <td class="paramname"><em>enemy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sprawdza, czy gracz jest w polu widzenia przeciwnika, tj sa w tej samej kolumnie lub wierszu i nie sa zaslonieci kolumna i nakierowuje na niego przeciwnika. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enemy</td><td>Wskaznik na przeciwnika, ktorego sprawdzane jest pole widzenia. </td></tr>
+    <tr><td class="paramname">player</td><td>Wskaznik na gracza. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Liczba 0 jesli nie widac gracza i nie zmieniono kierunku przeciwnika, liczba 1 jesli go widac i nakierowano na niego przeciwnika. </dd></dl>
+
+</div>
+</div>
+<a id="ac39567aeae0ae70e0860e2651e61e024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac39567aeae0ae70e0860e2651e61e024">&#9670;&nbsp;</a></span>resetEnemyStatics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resetEnemyStatics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wywoluje funkcje zawierajace zmienne statyczne tak, by je zresetowac. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

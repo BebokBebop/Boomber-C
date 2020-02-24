@@ -1,0 +1,528 @@
+\begin{theindex}
+
+  \item {add\+Enemy}
+    \subitem {Enemies.\+c}, \hyperpage{27}
+    \subitem {Enemies.\+h}, \hyperpage{31}
+  \item {allocate\+Map}
+    \subitem {map\+Mem\+And\+Gen.\+c}, \hyperpage{56}
+    \subitem {map\+Mem\+And\+Gen.\+h}, \hyperpage{57}
+
+  \indexspace
+
+  \item {Bomb}, \hyperpage{5}
+    \subitem {coords}, \hyperpage{5}
+    \subitem {explosion\+Timer}, \hyperpage{5}
+    \subitem {fire\+Cross}, \hyperpage{6}
+    \subitem {kick\+Direction}, \hyperpage{6}
+    \subitem {kick\+Timer}, \hyperpage{6}
+    \subitem {size}, \hyperpage{6}
+    \subitem {stat\+Flag}, \hyperpage{6}
+  \item {bomb\+List}
+    \subitem {Player}, \hyperpage{8}
+  \item {bomb\+State}
+    \subitem {enums\+Structs\+Macros.\+h}, \hyperpage{37}
+  \item {broken\+Shield\+Timer}
+    \subitem {Player}, \hyperpage{8}
+
+  \indexspace
+
+  \item {check\+\_\+param}
+    \subitem {Test\+Arg.\+h}, \hyperpage{71}
+    \subitem {Testy\+Arg.\+c}, \hyperpage{72}
+  \item {check\+Player}
+    \subitem {player.\+c}, \hyperpage{59}
+    \subitem {player.\+h}, \hyperpage{65}
+  \item {clean\+Tile}
+    \subitem {manage bombs.\+C}, \hyperpage{49}
+    \subitem {manage bombs.\+h}, \hyperpage{52}
+  \item {clean\+Up}
+    \subitem {manage bombs.\+C}, \hyperpage{49}
+    \subitem {manage bombs.\+h}, \hyperpage{52}
+  \item {coords}
+    \subitem {Bomb}, \hyperpage{5}
+    \subitem {Enemy}, \hyperpage{7}
+    \subitem {Player}, \hyperpage{8}
+
+  \indexspace
+
+  \item {damage\+Player}
+    \subitem {player.\+c}, \hyperpage{60}
+    \subitem {player.\+h}, \hyperpage{65}
+  \item {dealocate\+Map}
+    \subitem {map\+Mem\+And\+Gen.\+c}, \hyperpage{57}
+    \subitem {map\+Mem\+And\+Gen.\+h}, \hyperpage{58}
+  \item {decrease\+Bomb\+Fire\+Range}
+    \subitem {player.\+c}, \hyperpage{60}
+    \subitem {player.\+h}, \hyperpage{65}
+  \item {decrease\+Bombs\+Avalible}
+    \subitem {player.\+c}, \hyperpage{60}
+    \subitem {player.\+h}, \hyperpage{66}
+  \item {Direction}
+    \subitem {enums\+Structs\+Macros.\+h}, \hyperpage{37}
+  \item {direction}
+    \subitem {Enemy}, \hyperpage{7}
+  \item {draw.\+c}, \hyperpage{11}
+    \subitem {draw\+All\+Enemies}, \hyperpage{11}
+    \subitem {draw\+Bomb}, \hyperpage{12}
+    \subitem {draw\+Bombs}, \hyperpage{12}
+    \subitem {draw\+Enemy}, \hyperpage{13}
+    \subitem {draw\+Enemy\+Blind}, \hyperpage{13}
+    \subitem {draw\+Enemy\+Random}, \hyperpage{14}
+    \subitem {draw\+Enemycharger\+Calm}, \hyperpage{13}
+    \subitem {draw\+Enemycharger\+Upset}, \hyperpage{14}
+    \subitem {draw\+Grid}, \hyperpage{15}
+    \subitem {draw\+Grid\+Base}, \hyperpage{15}
+    \subitem {draw\+Pause\+Screen}, \hyperpage{16}
+    \subitem {draw\+Player}, \hyperpage{16}
+    \subitem {draw\+Portal}, \hyperpage{16}
+    \subitem {draw\+Scoreboard}, \hyperpage{16}
+    \subitem {draw\+Square}, \hyperpage{16}
+    \subitem {draw\+Upgrade}, \hyperpage{17}
+    \subitem {init\+Grid}, \hyperpage{17}
+    \subitem {reset\+Draw\+Statics}, \hyperpage{18}
+    \subitem {set\+Gl\+Lists}, \hyperpage{18}
+    \subitem {un\+Set\+Gl\+List}, \hyperpage{18}
+  \item {draw.\+h}, \hyperpage{19}
+    \subitem {draw\+All\+Enemies}, \hyperpage{19}
+    \subitem {draw\+Bomb}, \hyperpage{20}
+    \subitem {draw\+Bombs}, \hyperpage{20}
+    \subitem {draw\+Enemy}, \hyperpage{20}
+    \subitem {draw\+Enemy\+Blind}, \hyperpage{21}
+    \subitem {draw\+Enemy\+Random}, \hyperpage{22}
+    \subitem {draw\+Enemycharger\+Calm}, \hyperpage{21}
+    \subitem {draw\+Enemycharger\+Upset}, \hyperpage{22}
+    \subitem {draw\+Grid}, \hyperpage{23}
+    \subitem {draw\+Grid\+Base}, \hyperpage{23}
+    \subitem {draw\+Pause\+Screen}, \hyperpage{23}
+    \subitem {draw\+Player}, \hyperpage{23}
+    \subitem {draw\+Portal}, \hyperpage{24}
+    \subitem {draw\+Scoreboard}, \hyperpage{24}
+    \subitem {draw\+Square}, \hyperpage{24}
+    \subitem {draw\+Upgrade}, \hyperpage{25}
+    \subitem {init\+Grid}, \hyperpage{25}
+    \subitem {reset\+Draw\+Statics}, \hyperpage{26}
+    \subitem {set\+Gl\+Lists}, \hyperpage{26}
+    \subitem {un\+Set\+Gl\+List}, \hyperpage{26}
+  \item {draw\+All\+Enemies}
+    \subitem {draw.\+c}, \hyperpage{11}
+    \subitem {draw.\+h}, \hyperpage{19}
+  \item {draw\+Bomb}
+    \subitem {draw.\+c}, \hyperpage{12}
+    \subitem {draw.\+h}, \hyperpage{20}
+  \item {draw\+Bombs}
+    \subitem {draw.\+c}, \hyperpage{12}
+    \subitem {draw.\+h}, \hyperpage{20}
+  \item {draw\+Enemy}
+    \subitem {draw.\+c}, \hyperpage{13}
+    \subitem {draw.\+h}, \hyperpage{20}
+  \item {draw\+Enemy\+Blind}
+    \subitem {draw.\+c}, \hyperpage{13}
+    \subitem {draw.\+h}, \hyperpage{21}
+  \item {draw\+Enemy\+Random}
+    \subitem {draw.\+c}, \hyperpage{14}
+    \subitem {draw.\+h}, \hyperpage{22}
+  \item {draw\+Enemycharger\+Calm}
+    \subitem {draw.\+c}, \hyperpage{13}
+    \subitem {draw.\+h}, \hyperpage{21}
+  \item {draw\+Enemycharger\+Upset}
+    \subitem {draw.\+c}, \hyperpage{14}
+    \subitem {draw.\+h}, \hyperpage{22}
+  \item {draw\+Grid}
+    \subitem {draw.\+c}, \hyperpage{15}
+    \subitem {draw.\+h}, \hyperpage{23}
+  \item {draw\+Grid\+Base}
+    \subitem {draw.\+c}, \hyperpage{15}
+    \subitem {draw.\+h}, \hyperpage{23}
+  \item {draw\+Pause\+Screen}
+    \subitem {draw.\+c}, \hyperpage{16}
+    \subitem {draw.\+h}, \hyperpage{23}
+  \item {draw\+Player}
+    \subitem {draw.\+c}, \hyperpage{16}
+    \subitem {draw.\+h}, \hyperpage{23}
+  \item {draw\+Portal}
+    \subitem {draw.\+c}, \hyperpage{16}
+    \subitem {draw.\+h}, \hyperpage{24}
+  \item {draw\+Scoreboard}
+    \subitem {draw.\+c}, \hyperpage{16}
+    \subitem {draw.\+h}, \hyperpage{24}
+  \item {draw\+Square}
+    \subitem {draw.\+c}, \hyperpage{16}
+    \subitem {draw.\+h}, \hyperpage{24}
+  \item {draw\+Upgrade}
+    \subitem {draw.\+c}, \hyperpage{17}
+    \subitem {draw.\+h}, \hyperpage{25}
+  \item {drop\+Enemies}
+    \subitem {Enemies.\+c}, \hyperpage{27}
+    \subitem {Enemies.\+h}, \hyperpage{32}
+
+  \indexspace
+
+  \item {Enemies.\+c}, \hyperpage{27}
+    \subitem {add\+Enemy}, \hyperpage{27}
+    \subitem {drop\+Enemies}, \hyperpage{27}
+    \subitem {init\+Enemies}, \hyperpage{28}
+    \subitem {manage\+Enemies\+And\+Score}, \hyperpage{28}
+    \subitem {move\+Blind}, \hyperpage{29}
+    \subitem {move\+Charger}, \hyperpage{29}
+    \subitem {move\+Enemy}, \hyperpage{30}
+    \subitem {move\+Random}, \hyperpage{30}
+    \subitem {point\+Towards\+Player\+If\+Possible}, \hyperpage{30}
+    \subitem {reset\+Enemy\+Statics}, \hyperpage{31}
+  \item {Enemies.\+h}, \hyperpage{31}
+    \subitem {add\+Enemy}, \hyperpage{31}
+    \subitem {drop\+Enemies}, \hyperpage{32}
+    \subitem {init\+Enemies}, \hyperpage{32}
+    \subitem {manage\+Enemies\+And\+Score}, \hyperpage{32}
+    \subitem {move\+Blind}, \hyperpage{33}
+    \subitem {move\+Charger}, \hyperpage{33}
+    \subitem {move\+Enemy}, \hyperpage{34}
+    \subitem {move\+Random}, \hyperpage{34}
+    \subitem {point\+Towards\+Player\+If\+Possible}, \hyperpage{35}
+    \subitem {reset\+Enemy\+Statics}, \hyperpage{35}
+  \item {Enemy}, \hyperpage{6}
+    \subitem {coords}, \hyperpage{7}
+    \subitem {direction}, \hyperpage{7}
+    \subitem {rotting\+Time}, \hyperpage{7}
+    \subitem {status}, \hyperpage{7}
+    \subitem {type}, \hyperpage{7}
+  \item {Enemy\+Type}
+    \subitem {enums\+Structs\+Macros.\+h}, \hyperpage{37}
+  \item {enums\+Structs\+Macros.\+h}, \hyperpage{35}
+    \subitem {bomb\+State}, \hyperpage{37}
+    \subitem {Direction}, \hyperpage{37}
+    \subitem {Enemy\+Type}, \hyperpage{37}
+    \subitem {Pause\+Screen\+Type}, \hyperpage{38}
+    \subitem {Status}, \hyperpage{38}
+    \subitem {tile\+Type}, \hyperpage{39}
+    \subitem {upgrades}, \hyperpage{39}
+  \item {error\+\_\+callback}
+    \subitem {main.\+c}, \hyperpage{45}
+  \item {explode\+Bomb\+Add\+Points}
+    \subitem {manage bombs.\+C}, \hyperpage{49}
+    \subitem {manage bombs.\+h}, \hyperpage{54}
+  \item {explosion\+Timer}
+    \subitem {Bomb}, \hyperpage{5}
+
+  \indexspace
+
+  \item {fire\+Cross}
+    \subitem {Bomb}, \hyperpage{6}
+  \item {fire\+Layers}
+    \subitem {tile}, \hyperpage{10}
+  \item {fonts.\+h}, \hyperpage{41}
+    \subitem {sign}, \hyperpage{41}
+    \subitem {translate\+Word}, \hyperpage{41}
+    \subitem {write\+Dynamic\+Data}, \hyperpage{42}
+    \subitem {write\+Pause\+Message}, \hyperpage{42}
+    \subitem {write\+Pause\+Message\+Score}, \hyperpage{42}
+    \subitem {write\+Static\+Data}, \hyperpage{43}
+
+  \indexspace
+
+  \item {generate\+Map}
+    \subitem {map\+Mem\+And\+Gen.\+c}, \hyperpage{57}
+    \subitem {map\+Mem\+And\+Gen.\+h}, \hyperpage{58}
+  \item {get\+Bomb\+ID}
+    \subitem {manage bombs.\+C}, \hyperpage{50}
+    \subitem {manage bombs.\+h}, \hyperpage{54}
+  \item {get\+Highscore}
+    \subitem {highscore\+File.\+c}, \hyperpage{43}
+    \subitem {highscore\+File.\+h}, \hyperpage{44}
+
+  \indexspace
+
+  \item {highscore\+File.\+c}, \hyperpage{43}
+    \subitem {get\+Highscore}, \hyperpage{43}
+    \subitem {set\+Highscore}, \hyperpage{43}
+  \item {highscore\+File.\+h}, \hyperpage{44}
+    \subitem {get\+Highscore}, \hyperpage{44}
+    \subitem {set\+Highscore}, \hyperpage{44}
+
+  \indexspace
+
+  \item {increase\+Bomb\+Fire\+Range}
+    \subitem {player.\+c}, \hyperpage{60}
+    \subitem {player.\+h}, \hyperpage{66}
+  \item {increase\+Bombs\+Avalible}
+    \subitem {player.\+c}, \hyperpage{61}
+    \subitem {player.\+h}, \hyperpage{66}
+  \item {init}
+    \subitem {main.\+c}, \hyperpage{45}
+  \item {init\+Enemies}
+    \subitem {Enemies.\+c}, \hyperpage{28}
+    \subitem {Enemies.\+h}, \hyperpage{32}
+  \item {init\+Grid}
+    \subitem {draw.\+c}, \hyperpage{17}
+    \subitem {draw.\+h}, \hyperpage{25}
+  \item {init\+Player}
+    \subitem {player.\+c}, \hyperpage{61}
+    \subitem {player.\+h}, \hyperpage{67}
+
+  \indexspace
+
+  \item {key\+\_\+callback}
+    \subitem {main.\+c}, \hyperpage{46}
+  \item {kick\+Direction}
+    \subitem {Bomb}, \hyperpage{6}
+  \item {kick\+Switch}
+    \subitem {player.\+c}, \hyperpage{61}
+    \subitem {player.\+h}, \hyperpage{67}
+  \item {kick\+Timer}
+    \subitem {Bomb}, \hyperpage{6}
+
+  \indexspace
+
+  \item {main.\+c}, \hyperpage{45}
+    \subitem {error\+\_\+callback}, \hyperpage{45}
+    \subitem {init}, \hyperpage{45}
+    \subitem {key\+\_\+callback}, \hyperpage{46}
+    \subitem {pause\+Game}, \hyperpage{47}
+    \subitem {reset\+Times}, \hyperpage{47}
+    \subitem {set\+Defaults\+If\+Necessary}, \hyperpage{47}
+    \subitem {un\+Pause\+Game}, \hyperpage{48}
+  \item {manage bombs.\+C}, \hyperpage{48}
+    \subitem {clean\+Tile}, \hyperpage{49}
+    \subitem {clean\+Up}, \hyperpage{49}
+    \subitem {explode\+Bomb\+Add\+Points}, \hyperpage{49}
+    \subitem {get\+Bomb\+ID}, \hyperpage{50}
+    \subitem {move\+Bomb\+Data}, \hyperpage{50}
+    \subitem {move\+Check\+Explode\+And\+Clean\+Up\+Bombs}, 
+		\hyperpage{51}
+    \subitem {move\+Tile}, \hyperpage{51}
+    \subitem {spread\+Fire}, \hyperpage{51}
+  \item {manage bombs.\+h}, \hyperpage{52}
+    \subitem {clean\+Tile}, \hyperpage{52}
+    \subitem {clean\+Up}, \hyperpage{52}
+    \subitem {explode\+Bomb\+Add\+Points}, \hyperpage{54}
+    \subitem {get\+Bomb\+ID}, \hyperpage{54}
+    \subitem {move\+Bomb\+Data}, \hyperpage{54}
+    \subitem {move\+Check\+Explode\+And\+Clean\+Up\+Bombs}, 
+		\hyperpage{55}
+    \subitem {move\+Tile}, \hyperpage{55}
+    \subitem {spread\+Fire}, \hyperpage{56}
+  \item {manage\+Enemies\+And\+Score}
+    \subitem {Enemies.\+c}, \hyperpage{28}
+    \subitem {Enemies.\+h}, \hyperpage{32}
+  \item {map\+Mem\+And\+Gen.\+c}, \hyperpage{56}
+    \subitem {allocate\+Map}, \hyperpage{56}
+    \subitem {dealocate\+Map}, \hyperpage{57}
+    \subitem {generate\+Map}, \hyperpage{57}
+  \item {map\+Mem\+And\+Gen.\+h}, \hyperpage{57}
+    \subitem {allocate\+Map}, \hyperpage{57}
+    \subitem {dealocate\+Map}, \hyperpage{58}
+    \subitem {generate\+Map}, \hyperpage{58}
+  \item {move\+Blind}
+    \subitem {Enemies.\+c}, \hyperpage{29}
+    \subitem {Enemies.\+h}, \hyperpage{33}
+  \item {move\+Bomb\+Data}
+    \subitem {manage bombs.\+C}, \hyperpage{50}
+    \subitem {manage bombs.\+h}, \hyperpage{54}
+  \item {move\+Charger}
+    \subitem {Enemies.\+c}, \hyperpage{29}
+    \subitem {Enemies.\+h}, \hyperpage{33}
+  \item {move\+Check\+Explode\+And\+Clean\+Up\+Bombs}
+    \subitem {manage bombs.\+C}, \hyperpage{51}
+    \subitem {manage bombs.\+h}, \hyperpage{55}
+  \item {move\+Enemy}
+    \subitem {Enemies.\+c}, \hyperpage{30}
+    \subitem {Enemies.\+h}, \hyperpage{34}
+  \item {move\+In\+A\+Direction\+And\+Kick\+If\+Possible\+And\+Collect\+An\+Upgrade}
+    \subitem {player.\+c}, \hyperpage{62}
+    \subitem {player.\+h}, \hyperpage{67}
+  \item {move\+Random}
+    \subitem {Enemies.\+c}, \hyperpage{30}
+    \subitem {Enemies.\+h}, \hyperpage{34}
+  \item {move\+Tile}
+    \subitem {manage bombs.\+C}, \hyperpage{51}
+    \subitem {manage bombs.\+h}, \hyperpage{55}
+
+  \indexspace
+
+  \item {newest\+Bomb}
+    \subitem {Player}, \hyperpage{8}
+
+  \indexspace
+
+  \item {oldest\+Bomb}
+    \subitem {Player}, \hyperpage{9}
+  \item {open\+Portal}
+    \subitem {player.\+c}, \hyperpage{62}
+    \subitem {player.\+h}, \hyperpage{68}
+
+  \indexspace
+
+  \item {pause\+Game}
+    \subitem {main.\+c}, \hyperpage{47}
+  \item {Pause\+Screen\+Type}
+    \subitem {enums\+Structs\+Macros.\+h}, \hyperpage{38}
+  \item {place\+Bomb}
+    \subitem {player.\+c}, \hyperpage{62}
+    \subitem {player.\+h}, \hyperpage{68}
+  \item {place\+Box}
+    \subitem {player.\+c}, \hyperpage{63}
+    \subitem {player.\+h}, \hyperpage{68}
+  \item {Player}, \hyperpage{8}
+    \subitem {bomb\+List}, \hyperpage{8}
+    \subitem {broken\+Shield\+Timer}, \hyperpage{8}
+    \subitem {coords}, \hyperpage{8}
+    \subitem {newest\+Bomb}, \hyperpage{8}
+    \subitem {oldest\+Bomb}, \hyperpage{9}
+    \subitem {score}, \hyperpage{9}
+    \subitem {status}, \hyperpage{9}
+    \subitem {time\+Left}, \hyperpage{9}
+    \subitem {upgrades}, \hyperpage{9}
+  \item {player.\+c}, \hyperpage{59}
+    \subitem {check\+Player}, \hyperpage{59}
+    \subitem {damage\+Player}, \hyperpage{60}
+    \subitem {decrease\+Bomb\+Fire\+Range}, \hyperpage{60}
+    \subitem {decrease\+Bombs\+Avalible}, \hyperpage{60}
+    \subitem {increase\+Bomb\+Fire\+Range}, \hyperpage{60}
+    \subitem {increase\+Bombs\+Avalible}, \hyperpage{61}
+    \subitem {init\+Player}, \hyperpage{61}
+    \subitem {kick\+Switch}, \hyperpage{61}
+    \subitem {move\+In\+A\+Direction\+And\+Kick\+If\+Possible\+And\+Collect\+An\+Upgrade}, 
+		\hyperpage{62}
+    \subitem {open\+Portal}, \hyperpage{62}
+    \subitem {place\+Bomb}, \hyperpage{62}
+    \subitem {place\+Box}, \hyperpage{63}
+    \subitem {re\+Init\+Player}, \hyperpage{63}
+    \subitem {reset\+Player\+Statics}, \hyperpage{63}
+    \subitem {shield\+Switch}, \hyperpage{63}
+    \subitem {wait\+For\+Game\+\_\+over}, \hyperpage{64}
+    \subitem {wait\+For\+Next\+Stage\+And\+Sum\+Score}, \hyperpage{64}
+  \item {player.\+h}, \hyperpage{64}
+    \subitem {check\+Player}, \hyperpage{65}
+    \subitem {damage\+Player}, \hyperpage{65}
+    \subitem {decrease\+Bomb\+Fire\+Range}, \hyperpage{65}
+    \subitem {decrease\+Bombs\+Avalible}, \hyperpage{66}
+    \subitem {increase\+Bomb\+Fire\+Range}, \hyperpage{66}
+    \subitem {increase\+Bombs\+Avalible}, \hyperpage{66}
+    \subitem {init\+Player}, \hyperpage{67}
+    \subitem {kick\+Switch}, \hyperpage{67}
+    \subitem {move\+In\+A\+Direction\+And\+Kick\+If\+Possible\+And\+Collect\+An\+Upgrade}, 
+		\hyperpage{67}
+    \subitem {open\+Portal}, \hyperpage{68}
+    \subitem {place\+Bomb}, \hyperpage{68}
+    \subitem {place\+Box}, \hyperpage{68}
+    \subitem {re\+Init\+Player}, \hyperpage{70}
+    \subitem {reset\+Player\+Statics}, \hyperpage{70}
+    \subitem {shield\+Switch}, \hyperpage{70}
+    \subitem {wait\+For\+Game\+\_\+over}, \hyperpage{70}
+    \subitem {wait\+For\+Next\+Stage\+And\+Sum\+Score}, \hyperpage{71}
+  \item {point\+Towards\+Player\+If\+Possible}
+    \subitem {Enemies.\+c}, \hyperpage{30}
+    \subitem {Enemies.\+h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {re\+Init\+Player}
+    \subitem {player.\+c}, \hyperpage{63}
+    \subitem {player.\+h}, \hyperpage{70}
+  \item {reset\+Draw\+Statics}
+    \subitem {draw.\+c}, \hyperpage{18}
+    \subitem {draw.\+h}, \hyperpage{26}
+  \item {reset\+Enemy\+Statics}
+    \subitem {Enemies.\+c}, \hyperpage{31}
+    \subitem {Enemies.\+h}, \hyperpage{35}
+  \item {reset\+Player\+Statics}
+    \subitem {player.\+c}, \hyperpage{63}
+    \subitem {player.\+h}, \hyperpage{70}
+  \item {reset\+Times}
+    \subitem {main.\+c}, \hyperpage{47}
+  \item {rotting\+Time}
+    \subitem {Enemy}, \hyperpage{7}
+
+  \indexspace
+
+  \item {score}
+    \subitem {Player}, \hyperpage{9}
+  \item {set\+Defaults\+If\+Necessary}
+    \subitem {main.\+c}, \hyperpage{47}
+  \item {set\+Gl\+Lists}
+    \subitem {draw.\+c}, \hyperpage{18}
+    \subitem {draw.\+h}, \hyperpage{26}
+  \item {set\+Highscore}
+    \subitem {highscore\+File.\+c}, \hyperpage{43}
+    \subitem {highscore\+File.\+h}, \hyperpage{44}
+  \item {shield\+Switch}
+    \subitem {player.\+c}, \hyperpage{63}
+    \subitem {player.\+h}, \hyperpage{70}
+  \item {sign}
+    \subitem {fonts.\+h}, \hyperpage{41}
+  \item {size}
+    \subitem {Bomb}, \hyperpage{6}
+  \item {spread\+Fire}
+    \subitem {manage bombs.\+C}, \hyperpage{51}
+    \subitem {manage bombs.\+h}, \hyperpage{56}
+  \item {stat\+Flag}
+    \subitem {Bomb}, \hyperpage{6}
+  \item {Status}
+    \subitem {enums\+Structs\+Macros.\+h}, \hyperpage{38}
+  \item {status}
+    \subitem {Enemy}, \hyperpage{7}
+    \subitem {Player}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Test\+Arg.\+h}, \hyperpage{71}
+    \subitem {check\+\_\+param}, \hyperpage{71}
+  \item {Testy\+Arg.\+c}, \hyperpage{72}
+    \subitem {check\+\_\+param}, \hyperpage{72}
+  \item {tile}, \hyperpage{9}
+    \subitem {fire\+Layers}, \hyperpage{10}
+    \subitem {type}, \hyperpage{10}
+    \subitem {upgrade}, \hyperpage{10}
+  \item {tile\+Type}
+    \subitem {enums\+Structs\+Macros.\+h}, \hyperpage{39}
+  \item {time\+Left}
+    \subitem {Player}, \hyperpage{9}
+  \item {translate\+Word}
+    \subitem {fonts.\+h}, \hyperpage{41}
+  \item {type}
+    \subitem {Enemy}, \hyperpage{7}
+    \subitem {tile}, \hyperpage{10}
+
+  \indexspace
+
+  \item {un\+Pause\+Game}
+    \subitem {main.\+c}, \hyperpage{48}
+  \item {un\+Set\+Gl\+List}
+    \subitem {draw.\+c}, \hyperpage{18}
+    \subitem {draw.\+h}, \hyperpage{26}
+  \item {upgrade}
+    \subitem {tile}, \hyperpage{10}
+  \item {upgrades}
+    \subitem {enums\+Structs\+Macros.\+h}, \hyperpage{39}
+    \subitem {Player}, \hyperpage{9}
+
+  \indexspace
+
+  \item {wait\+For\+Game\+\_\+over}
+    \subitem {player.\+c}, \hyperpage{64}
+    \subitem {player.\+h}, \hyperpage{70}
+  \item {wait\+For\+Next\+Stage\+And\+Sum\+Score}
+    \subitem {player.\+c}, \hyperpage{64}
+    \subitem {player.\+h}, \hyperpage{71}
+  \item {write\+Dynamic\+Data}
+    \subitem {fonts.\+h}, \hyperpage{42}
+  \item {write\+Pause\+Message}
+    \subitem {fonts.\+h}, \hyperpage{42}
+  \item {write\+Pause\+Message\+Score}
+    \subitem {fonts.\+h}, \hyperpage{42}
+  \item {write\+Static\+Data}
+    \subitem {fonts.\+h}, \hyperpage{43}
+
+  \indexspace
+
+  \item {x}
+    \subitem {XY}, \hyperpage{10}
+  \item {XY}, \hyperpage{10}
+    \subitem {x}, \hyperpage{10}
+    \subitem {y}, \hyperpage{10}
+
+  \indexspace
+
+  \item {y}
+    \subitem {XY}, \hyperpage{10}
+
+\end{theindex}

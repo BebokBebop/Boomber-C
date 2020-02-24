@@ -1,0 +1,769 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Boomberman: Dokumentacja pliku player stuff.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Boomberman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku player stuff.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="enums_structs_macros_8h_source.html">enumsStructsMacros.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="player_01stuff_8h_source.html">player stuff.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;GLFW\glfw3.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a7ef0feb1bae3077cf8897264cfdfdacb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a7ef0feb1bae3077cf8897264cfdfdacb">moveInADirectionAndKickIfPossibleAndCollectAnUpgrade</a> (<a class="el" href="enums_structs_macros_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> dir, <a class="el" href="structtile.html">tile</a> **bitmap, <a class="el" href="struct_player.html">Player</a> *player, int gridSize)</td></tr>
+<tr class="separator:a7ef0feb1bae3077cf8897264cfdfdacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a9b492961ff937ab91eef77527b1b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#aa5a9b492961ff937ab91eef77527b1b6">initPlayer</a> (<a class="el" href="struct_player.html">Player</a> *player, int gameTime, int gridSize)</td></tr>
+<tr class="separator:aa5a9b492961ff937ab91eef77527b1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8f58f6734309e9aebc233f368fd706"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a6e8f58f6734309e9aebc233f368fd706">resetPlayerStatics</a> ()</td></tr>
+<tr class="separator:a6e8f58f6734309e9aebc233f368fd706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efb7a84db12c3fd1a47a3d916e0f3ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a5efb7a84db12c3fd1a47a3d916e0f3ea">reInitPlayer</a> (<a class="el" href="struct_player.html">Player</a> *player, int gameTime, int gridSize)</td></tr>
+<tr class="separator:a5efb7a84db12c3fd1a47a3d916e0f3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e27a5b0aaa5a50c631275d789ab1c57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a8e27a5b0aaa5a50c631275d789ab1c57">openPortal</a> (<a class="el" href="structtile.html">tile</a> **bitmap, int gridSize)</td></tr>
+<tr class="separator:a8e27a5b0aaa5a50c631275d789ab1c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337cbb4012896735dbddc79f8c403673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a337cbb4012896735dbddc79f8c403673">placeBomb</a> (<a class="el" href="structtile.html">tile</a> **bitmap, <a class="el" href="struct_player.html">Player</a> *player, int gridSize)</td></tr>
+<tr class="separator:a337cbb4012896735dbddc79f8c403673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584760b2d7efe76cf80d3553a8c1efe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a584760b2d7efe76cf80d3553a8c1efe1">placeBox</a> (<a class="el" href="structtile.html">tile</a> **bitmap, <a class="el" href="struct_player.html">Player</a> *player, int gridSize)</td></tr>
+<tr class="separator:a584760b2d7efe76cf80d3553a8c1efe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426702e715c395926b80cca8e7136ac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a426702e715c395926b80cca8e7136ac1">damagePlayer</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a426702e715c395926b80cca8e7136ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f3417509eb26ec6d697e5e083950af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#aa4f3417509eb26ec6d697e5e083950af">checkPlayer</a> (<a class="el" href="structtile.html">tile</a> **bitmap, <a class="el" href="struct_player.html">Player</a> *player, int gameTime, int reset)</td></tr>
+<tr class="separator:aa4f3417509eb26ec6d697e5e083950af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5f54d55864ca24e1dbcd2ab82724a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a1e5f54d55864ca24e1dbcd2ab82724a3">waitForGame_over</a> ()</td></tr>
+<tr class="separator:a1e5f54d55864ca24e1dbcd2ab82724a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d51f48bb638c4054d32b5362941be0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a6d51f48bb638c4054d32b5362941be0e">waitForNextStageAndSumScore</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a6d51f48bb638c4054d32b5362941be0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e711cd99ad3fe0ec20cb15b8a3173e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a61e711cd99ad3fe0ec20cb15b8a3173e">increaseBombFireRange</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a61e711cd99ad3fe0ec20cb15b8a3173e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f8c227b58f30a450183c234953bea5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a09f8c227b58f30a450183c234953bea5">decreaseBombFireRange</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a09f8c227b58f30a450183c234953bea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0936658df5e6daac7fc4649795702d9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a0936658df5e6daac7fc4649795702d9b">increaseBombsAvalible</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a0936658df5e6daac7fc4649795702d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9979291f9376186baf355749aa081217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a9979291f9376186baf355749aa081217">decreaseBombsAvalible</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a9979291f9376186baf355749aa081217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b3c0b2fbe1f2410f2c17f7dd9e1cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a80b3c0b2fbe1f2410f2c17f7dd9e1cd5">shieldSwitch</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a80b3c0b2fbe1f2410f2c17f7dd9e1cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977ee6c4cb3164b60e896517b3f81e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_01stuff_8c.html#a977ee6c4cb3164b60e896517b3f81e68">kickSwitch</a> (<a class="el" href="struct_player.html">Player</a> *player)</td></tr>
+<tr class="separator:a977ee6c4cb3164b60e896517b3f81e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="aa4f3417509eb26ec6d697e5e083950af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f3417509eb26ec6d697e5e083950af">&#9670;&nbsp;</a></span>checkPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void checkPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gameTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stawia pudelko na kafelku na ktorym stoi gracz. Funkcja dostepna tylko w trybie debugu. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bitmap</td><td>wskaznik na mape gry </td></tr>
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+    <tr><td class="paramname">gameTime</td><td>czas, w ktorym gracz ma skonczyc plansze </td></tr>
+    <tr><td class="paramname">reset</td><td>jesli 1 to nalezy zresetowac wartosci statycze w funkcji i z niej wyjsc, bez wykonywania reszty jej ciala </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                                         {</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> lastTime = -1;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (reset) {</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        lastTime = -1;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> == <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8">appearing</a>) {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">if</span> (lastTime == -1) {</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            lastTime = glfwGetTime() + PLAYER_APPEAR_TIME;</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        }</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">else</span> {</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (lastTime - glfwGetTime() &lt;= 0) {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> = <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5">alive</a>;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                lastTime = -1;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> != <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5">alive</a>) {</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">if</span> (bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type == <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df">fireTile</a> </div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        || bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type == <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3fa6f8668745e0a04e037214f1d99bab">enemyTile</a></div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        || bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type == <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3ce6737e1294d3ed1d5f4efc25d8e0a0">firedBox</a>) {</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="player_01stuff_8c.html#a426702e715c395926b80cca8e7136ac1">damagePlayer</a>(player);</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type == <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a573d0ad3a3fca2e2ea94df18b4fe5702">portalTile</a>) {</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> = <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba386c949653c7a74f73475b84e44b86c6">winning</a>;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">score</a> += 1000;</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> &gt; 0) {</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> = gameTime - glfwGetTime();</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> &lt;= 0) {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> = 0;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            lastTime = glfwGetTime();</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">score</a> &gt;= 10) {</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">if</span> (glfwGetTime() - lastTime &gt; SCORE_DROP_FREQUENCY) {</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            lastTime = glfwGetTime();</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            player-&gt;<a class="code" href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">score</a> *= (double)8.5/10;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        }</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (glfwGetTime() - lastTime &gt; SCORE_DROP_FREQUENCY) {</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">score</a> = 0;</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> = <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba2bc11c916ebf99c8bd8b66b416de6d62">dead</a>;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div><div class="ttc" id="struct_player_html_aeb08943a32834515e66222d2e948292d"><div class="ttname"><a href="struct_player.html#aeb08943a32834515e66222d2e948292d">Player::status</a></div><div class="ttdeci">Status status</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:213</div></div>
+<div class="ttc" id="struct_player_html_ace6abae8d66534ad0a1fd6458f786a6e"><div class="ttname"><a href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">Player::score</a></div><div class="ttdeci">int score</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:215</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba386c949653c7a74f73475b84e44b86c6"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba386c949653c7a74f73475b84e44b86c6">winning</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:165</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba2bc11c916ebf99c8bd8b66b416de6d62"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba2bc11c916ebf99c8bd8b66b416de6d62">dead</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:163</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a3fa6f8668745e0a04e037214f1d99bab"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3fa6f8668745e0a04e037214f1d99bab">enemyTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:123</div></div>
+<div class="ttc" id="struct_player_html_a9f5df822bb76dbd172b957db9bb33458"><div class="ttname"><a href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">Player::timeLeft</a></div><div class="ttdeci">int timeLeft</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:216</div></div>
+<div class="ttc" id="struct_x_y_html_a29c62a4354023af09e8457601e41d229"><div class="ttname"><a href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">XY::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:175</div></div>
+<div class="ttc" id="player_01stuff_8c_html_a426702e715c395926b80cca8e7136ac1"><div class="ttname"><a href="player_01stuff_8c.html#a426702e715c395926b80cca8e7136ac1">damagePlayer</a></div><div class="ttdeci">void damagePlayer(Player *player)</div><div class="ttdef"><b>Definition:</b> player stuff.c:160</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8">appearing</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:169</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df">fireTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:120</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a3ce6737e1294d3ed1d5f4efc25d8e0a0"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3ce6737e1294d3ed1d5f4efc25d8e0a0">firedBox</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:121</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5">alive</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:164</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a573d0ad3a3fca2e2ea94df18b4fe5702"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a573d0ad3a3fca2e2ea94df18b4fe5702">portalTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:122</div></div>
+<div class="ttc" id="struct_x_y_html_a5260fedc448051582dbf7f4cbd2d3dfe"><div class="ttname"><a href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">XY::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:176</div></div>
+<div class="ttc" id="struct_player_html_a60fad3578d62e8d11e65911337a13244"><div class="ttname"><a href="struct_player.html#a60fad3578d62e8d11e65911337a13244">Player::coords</a></div><div class="ttdeci">XY coords</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:212</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a426702e715c395926b80cca8e7136ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a426702e715c395926b80cca8e7136ac1">&#9670;&nbsp;</a></span>damagePlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void damagePlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zabija gracza, jesli ten nie ma aktywnego ulepszenia tarczy. Jesli ma, to po chwili sie je wylacza. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                  {</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>]) {</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>] = 0;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        player-&gt;<a class="code" href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">brokenShieldTimer</a> = glfwGetTime();</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (glfwGetTime() - player-&gt;<a class="code" href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">brokenShieldTimer</a> &gt; BROKEN_SHIELD_TIME) {</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> = <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba2bc11c916ebf99c8bd8b66b416de6d62">dead</a>;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div><div class="ttc" id="struct_player_html_aeb08943a32834515e66222d2e948292d"><div class="ttname"><a href="struct_player.html#aeb08943a32834515e66222d2e948292d">Player::status</a></div><div class="ttdeci">Status status</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:213</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba2bc11c916ebf99c8bd8b66b416de6d62"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba2bc11c916ebf99c8bd8b66b416de6d62">dead</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:163</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:110</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="struct_player_html_aca0817efc57fca8f014e40d2c108f7bb"><div class="ttname"><a href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">Player::brokenShieldTimer</a></div><div class="ttdeci">double brokenShieldTimer</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:217</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a09f8c227b58f30a450183c234953bea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f8c227b58f30a450183c234953bea5">&#9670;&nbsp;</a></span>decreaseBombFireRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void decreaseBombFireRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obniza zasieg bomb gracza. Dostepne tylko w trybie debugowania </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                           {</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a>] &gt; 2) {</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a>]--;</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div><div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:107</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9979291f9376186baf355749aa081217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9979291f9376186baf355749aa081217">&#9670;&nbsp;</a></span>decreaseBombsAvalible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void decreaseBombsAvalible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zmniejsza ilosc dostepnych bomb gracza. Dostepne tylko w trybie debugowania </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                           {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>] &gt; 1) {</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>]--;</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}</div><div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:108</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a61e711cd99ad3fe0ec20cb15b8a3173e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e711cd99ad3fe0ec20cb15b8a3173e">&#9670;&nbsp;</a></span>increaseBombFireRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void increaseBombFireRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zwieksza zasieg bomb gracza. Dostepne tylko w trybie debugowania </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                           {</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a>]++;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div><div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:107</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0936658df5e6daac7fc4649795702d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0936658df5e6daac7fc4649795702d9b">&#9670;&nbsp;</a></span>increaseBombsAvalible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void increaseBombsAvalible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zwieksza ilosc dostepnych bomb gracza. Dostepne tylko w trybie debugowania </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                           {</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>]++;</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div><div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:108</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa5a9b492961ff937ab91eef77527b1b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a9b492961ff937ab91eef77527b1b6">&#9670;&nbsp;</a></span>initPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gameTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicjalizuje gracza, tj. ustawia mu wszystkie dane </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+    <tr><td class="paramname">gameTime</td><td>czas, w ktorym gracz ma skonczyc plansze </td></tr>
+    <tr><td class="paramname">gridSize</td><td>wielkosc mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                            {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> = 1;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> = gridSize - 2;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> = <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8">appearing</a>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    player-&gt;<a class="code" href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">score</a> = 0;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> = gameTime + PLAYER_APPEAR_TIME;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a>] = 2;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a>] = 0;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>] = 0;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>] = 1;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    player-&gt;<a class="code" href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">brokenShieldTimer</a> = -1;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10; i++) {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[i].<a class="code" href="struct_bomb.html#a2fa3684effcc6e03d4ca9d47cc92c0b4">statFlag</a> = <a class="code" href="enums_structs_macros_8h.html#a85862f8bba17794a87d664e16fe33acbae8654263bd8adf1d0922f427d8f3fc1b">empty</a>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a> = 0;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a284c4526d6934eef1ea29f4aa61ea9e9">oldestBomb</a> = 0;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div><div class="ttc" id="struct_player_html_aeb08943a32834515e66222d2e948292d"><div class="ttname"><a href="struct_player.html#aeb08943a32834515e66222d2e948292d">Player::status</a></div><div class="ttdeci">Status status</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:213</div></div>
+<div class="ttc" id="struct_player_html_a8fb3de478f4a924ee6b9c22a168d1807"><div class="ttname"><a href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">Player::bombList</a></div><div class="ttdeci">Bomb bombList[MAX_BOMBS]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:218</div></div>
+<div class="ttc" id="struct_player_html_ace6abae8d66534ad0a1fd6458f786a6e"><div class="ttname"><a href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">Player::score</a></div><div class="ttdeci">int score</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:215</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:109</div></div>
+<div class="ttc" id="struct_bomb_html_a2fa3684effcc6e03d4ca9d47cc92c0b4"><div class="ttname"><a href="struct_bomb.html#a2fa3684effcc6e03d4ca9d47cc92c0b4">Bomb::statFlag</a></div><div class="ttdeci">bombState statFlag</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:196</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:108</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:110</div></div>
+<div class="ttc" id="struct_player_html_a9f5df822bb76dbd172b957db9bb33458"><div class="ttname"><a href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">Player::timeLeft</a></div><div class="ttdeci">int timeLeft</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:216</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a85862f8bba17794a87d664e16fe33acbae8654263bd8adf1d0922f427d8f3fc1b"><div class="ttname"><a href="enums_structs_macros_8h.html#a85862f8bba17794a87d664e16fe33acbae8654263bd8adf1d0922f427d8f3fc1b">empty</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:129</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="struct_x_y_html_a29c62a4354023af09e8457601e41d229"><div class="ttname"><a href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">XY::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:175</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8">appearing</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:169</div></div>
+<div class="ttc" id="struct_x_y_html_a5260fedc448051582dbf7f4cbd2d3dfe"><div class="ttname"><a href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">XY::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:176</div></div>
+<div class="ttc" id="struct_player_html_a4a2fcb0a816a0b9121a5ba00d429c55a"><div class="ttname"><a href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">Player::newestBomb</a></div><div class="ttdeci">int newestBomb</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:219</div></div>
+<div class="ttc" id="struct_player_html_a60fad3578d62e8d11e65911337a13244"><div class="ttname"><a href="struct_player.html#a60fad3578d62e8d11e65911337a13244">Player::coords</a></div><div class="ttdeci">XY coords</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:212</div></div>
+<div class="ttc" id="struct_player_html_a284c4526d6934eef1ea29f4aa61ea9e9"><div class="ttname"><a href="struct_player.html#a284c4526d6934eef1ea29f4aa61ea9e9">Player::oldestBomb</a></div><div class="ttdeci">int oldestBomb</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:220</div></div>
+<div class="ttc" id="struct_player_html_aca0817efc57fca8f014e40d2c108f7bb"><div class="ttname"><a href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">Player::brokenShieldTimer</a></div><div class="ttdeci">double brokenShieldTimer</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:217</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:107</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a977ee6c4cb3164b60e896517b3f81e68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977ee6c4cb3164b60e896517b3f81e68">&#9670;&nbsp;</a></span>kickSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kickSwitch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wlacza lub wylacza ulepszenie kopania bomb gracza. Dostepne tylko w trybie debugowania </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                                {</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a>])</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a>] = 0;</div><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a>] = 1;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div><div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:109</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7ef0feb1bae3077cf8897264cfdfdacb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef0feb1bae3077cf8897264cfdfdacb">&#9670;&nbsp;</a></span>moveInADirectionAndKickIfPossibleAndCollectAnUpgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moveInADirectionAndKickIfPossibleAndCollectAnUpgrade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enums_structs_macros_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Przesuwa gracza, jesli moze. Jesli na nowym kafelku bylo ulepszenie, to je zbiera, a jesli na nowym kafelku byla bomba, a gracz ma ulepszenie kopania bomb, to bomba ta zostanie kopnieta </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>kierunek przesuniecia gracza </td></tr>
+    <tr><td class="paramname">bitmap</td><td>wskaznik na mape gry </td></tr>
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+    <tr><td class="paramname">gridSize</td><td>wielkosc mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                                                                                                                      {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> != <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5">alive</a>) { <span class="comment">//dead and teleporting players dont move</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> coordCheck;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> vert;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> horz;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">switch</span> (dir) {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">case</span> north: {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        vert = 1;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        horz = 0;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        coordCheck = player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">case</span> east: {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        vert = 0;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        horz = 1;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        coordCheck = player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">case</span> south: {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        vert = -1;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        horz = 0;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        coordCheck = player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">case</span> west: {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        vert = 0;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        horz = -1;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        coordCheck = player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">break</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (coordCheck + vert + horz &lt; gridSize &amp;&amp; coordCheck + vert + horz &gt;= 0) {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert].type == <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a> &amp;&amp; player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a>] &amp;&amp; (coordCheck + 2 * vert + 2 * horz &lt; gridSize &amp;&amp; coordCheck + 2 * vert + 2 * horz &gt;= 0)) {<span class="comment">// sprawdz tez czy kafelka jeden dalej jest wolna, jesli chcesz kopnac bombe</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + 2 * horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + 2 * vert].type == <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3671f69dacecad862a6217e513e17124">pathTile</a>) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordtype">int</span> currBombID = <a class="code" href="manage_01bombs_8_c.html#af70d9453740a7975f3c98ba4e7509f68">getBombID</a>(player, player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz, player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[currBombID].<a class="code" href="struct_bomb.html#a0bf8b6ceb32adcee6dad5b4f32605ce2">kickDirection</a> = dir;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[currBombID].<a class="code" href="struct_bomb.html#aa2ac1f6a85cb9e141f3a8313f05091cc">kickTimer</a> = glfwGetTime();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert].<a class="code" href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">type</a> = <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3671f69dacecad862a6217e513e17124">pathTile</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a96017624794e66239cbad6f80455af4a">boxTile</a></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            &amp;&amp; bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a2248a60b974892ad509211b5efa3ec16">pillarTile</a></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            &amp;&amp; bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a>) {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">switch</span> (bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert].upgrade) {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a>: {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a>]++;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>: {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>]++;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a>: {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a>] = 1;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>: {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>] = 1;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                player-&gt;<a class="code" href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">brokenShieldTimer</a> = -1;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            }</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> + horz][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> + vert].<a class="code" href="structtile.html#ae8518df60928fa8c04dc24338ff9fc83">upgrade</a> = 0;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> += horz;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> += vert;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="ttc" id="struct_player_html_aeb08943a32834515e66222d2e948292d"><div class="ttname"><a href="struct_player.html#aeb08943a32834515e66222d2e948292d">Player::status</a></div><div class="ttdeci">Status status</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:213</div></div>
+<div class="ttc" id="struct_player_html_a8fb3de478f4a924ee6b9c22a168d1807"><div class="ttname"><a href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">Player::bombList</a></div><div class="ttdeci">Bomb bombList[MAX_BOMBS]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:218</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a96017624794e66239cbad6f80455af4a"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a96017624794e66239cbad6f80455af4a">boxTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:117</div></div>
+<div class="ttc" id="structtile_html_ae8518df60928fa8c04dc24338ff9fc83"><div class="ttname"><a href="structtile.html#ae8518df60928fa8c04dc24338ff9fc83">tile::upgrade</a></div><div class="ttdeci">upgrades upgrade</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:184</div></div>
+<div class="ttc" id="struct_bomb_html_a0bf8b6ceb32adcee6dad5b4f32605ce2"><div class="ttname"><a href="struct_bomb.html#a0bf8b6ceb32adcee6dad5b4f32605ce2">Bomb::kickDirection</a></div><div class="ttdeci">Direction kickDirection</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:195</div></div>
+<div class="ttc" id="structtile_html_a2f72cb93888f4c4a2b5f6511e59bf30c"><div class="ttname"><a href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">tile::type</a></div><div class="ttdeci">tileType type</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:182</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2ad2e6c1085cef946790cd7cb7e4f4f891">bombKick</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:109</div></div>
+<div class="ttc" id="manage_01bombs_8_c_html_af70d9453740a7975f3c98ba4e7509f68"><div class="ttname"><a href="manage_01bombs_8_c.html#af70d9453740a7975f3c98ba4e7509f68">getBombID</a></div><div class="ttdeci">int getBombID(Player *player, int x, int y)</div><div class="ttdef"><b>Definition:</b> manage bombs.C:8</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:108</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:110</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="struct_x_y_html_a29c62a4354023af09e8457601e41d229"><div class="ttname"><a href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">XY::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:175</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a2248a60b974892ad509211b5efa3ec16"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a2248a60b974892ad509211b5efa3ec16">pillarTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:118</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5">alive</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:164</div></div>
+<div class="ttc" id="struct_bomb_html_aa2ac1f6a85cb9e141f3a8313f05091cc"><div class="ttname"><a href="struct_bomb.html#aa2ac1f6a85cb9e141f3a8313f05091cc">Bomb::kickTimer</a></div><div class="ttdeci">double kickTimer</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:194</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:119</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a3671f69dacecad862a6217e513e17124"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3671f69dacecad862a6217e513e17124">pathTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:116</div></div>
+<div class="ttc" id="struct_x_y_html_a5260fedc448051582dbf7f4cbd2d3dfe"><div class="ttname"><a href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">XY::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:176</div></div>
+<div class="ttc" id="struct_player_html_a60fad3578d62e8d11e65911337a13244"><div class="ttname"><a href="struct_player.html#a60fad3578d62e8d11e65911337a13244">Player::coords</a></div><div class="ttdeci">XY coords</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:212</div></div>
+<div class="ttc" id="struct_player_html_aca0817efc57fca8f014e40d2c108f7bb"><div class="ttname"><a href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">Player::brokenShieldTimer</a></div><div class="ttdeci">double brokenShieldTimer</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:217</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:107</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8e27a5b0aaa5a50c631275d789ab1c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e27a5b0aaa5a50c631275d789ab1c57">&#9670;&nbsp;</a></span>openPortal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void openPortal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Otwiera portal, czyli zamienia srodkowy kafelek mapy na kafelek portalu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bitmap</td><td>wskaznik na mape gry </td></tr>
+    <tr><td class="paramname">gridSize</td><td>wielkosc mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                             {</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    bitmap[gridSize / 2][gridSize / 2].<a class="code" href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">type</a> = <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a573d0ad3a3fca2e2ea94df18b4fe5702">portalTile</a>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div><div class="ttc" id="structtile_html_a2f72cb93888f4c4a2b5f6511e59bf30c"><div class="ttname"><a href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">tile::type</a></div><div class="ttdeci">tileType type</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:182</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a573d0ad3a3fca2e2ea94df18b4fe5702"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a573d0ad3a3fca2e2ea94df18b4fe5702">portalTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:122</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a337cbb4012896735dbddc79f8c403673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337cbb4012896735dbddc79f8c403673">&#9670;&nbsp;</a></span>placeBomb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void placeBomb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stawia bombe na kafelku na ktorym stoi gracz </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bitmap</td><td>wskaznik na mape gry </td></tr>
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+    <tr><td class="paramname">gridSize</td><td>wielkosc mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                            {</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> != <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5">alive</a>) {</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>]</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        &amp;&amp; bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        &amp;&amp; bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df">fireTile</a></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        &amp;&amp; bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3fa6f8668745e0a04e037214f1d99bab">enemyTile</a></div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        &amp;&amp; bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a2248a60b974892ad509211b5efa3ec16">pillarTile</a>)</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].<a class="code" href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">type</a> = <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a>;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a>].<a class="code" href="struct_bomb.html#a62a917b182cdb7bfcb3238b8a3b9eb79">size</a> = player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a>];</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a>].<a class="code" href="struct_bomb.html#abaeef5c4cd2e2e25688ba625fe13bcc3">explosionTimer</a> = glfwGetTime();</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a>].<a class="code" href="struct_bomb.html#aee2e79180661220dc9bd5639fbfc25df">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> = player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>;</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a>].<a class="code" href="struct_bomb.html#aee2e79180661220dc9bd5639fbfc25df">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> = player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a>].<a class="code" href="struct_bomb.html#a2fa3684effcc6e03d4ca9d47cc92c0b4">statFlag</a> = <a class="code" href="enums_structs_macros_8h.html#a85862f8bba17794a87d664e16fe33acba8c47f3934ee3d3ebe05cb3ea25843455">placed</a>;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a>].<a class="code" href="struct_bomb.html#a0bf8b6ceb32adcee6dad5b4f32605ce2">kickDirection</a> = 0;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>]--;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a>++;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a> &gt;= MAX_BOMBS) {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a> -= MAX_BOMBS;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div><div class="ttc" id="struct_player_html_aeb08943a32834515e66222d2e948292d"><div class="ttname"><a href="struct_player.html#aeb08943a32834515e66222d2e948292d">Player::status</a></div><div class="ttdeci">Status status</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:213</div></div>
+<div class="ttc" id="struct_player_html_a8fb3de478f4a924ee6b9c22a168d1807"><div class="ttname"><a href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">Player::bombList</a></div><div class="ttdeci">Bomb bombList[MAX_BOMBS]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:218</div></div>
+<div class="ttc" id="struct_bomb_html_a0bf8b6ceb32adcee6dad5b4f32605ce2"><div class="ttname"><a href="struct_bomb.html#a0bf8b6ceb32adcee6dad5b4f32605ce2">Bomb::kickDirection</a></div><div class="ttdeci">Direction kickDirection</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:195</div></div>
+<div class="ttc" id="structtile_html_a2f72cb93888f4c4a2b5f6511e59bf30c"><div class="ttname"><a href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">tile::type</a></div><div class="ttdeci">tileType type</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:182</div></div>
+<div class="ttc" id="struct_bomb_html_a2fa3684effcc6e03d4ca9d47cc92c0b4"><div class="ttname"><a href="struct_bomb.html#a2fa3684effcc6e03d4ca9d47cc92c0b4">Bomb::statFlag</a></div><div class="ttdeci">bombState statFlag</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:196</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:108</div></div>
+<div class="ttc" id="struct_bomb_html_abaeef5c4cd2e2e25688ba625fe13bcc3"><div class="ttname"><a href="struct_bomb.html#abaeef5c4cd2e2e25688ba625fe13bcc3">Bomb::explosionTimer</a></div><div class="ttdeci">double explosionTimer</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:193</div></div>
+<div class="ttc" id="struct_bomb_html_aee2e79180661220dc9bd5639fbfc25df"><div class="ttname"><a href="struct_bomb.html#aee2e79180661220dc9bd5639fbfc25df">Bomb::coords</a></div><div class="ttdeci">XY coords</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:192</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a3fa6f8668745e0a04e037214f1d99bab"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a3fa6f8668745e0a04e037214f1d99bab">enemyTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:123</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="struct_x_y_html_a29c62a4354023af09e8457601e41d229"><div class="ttname"><a href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">XY::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:175</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a85862f8bba17794a87d664e16fe33acba8c47f3934ee3d3ebe05cb3ea25843455"><div class="ttname"><a href="enums_structs_macros_8h.html#a85862f8bba17794a87d664e16fe33acba8c47f3934ee3d3ebe05cb3ea25843455">placed</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:130</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df">fireTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:120</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a2248a60b974892ad509211b5efa3ec16"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a2248a60b974892ad509211b5efa3ec16">pillarTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:118</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70bac188eabb2d61ddb1e8632280be9b0dd5">alive</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:164</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:119</div></div>
+<div class="ttc" id="struct_x_y_html_a5260fedc448051582dbf7f4cbd2d3dfe"><div class="ttname"><a href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">XY::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:176</div></div>
+<div class="ttc" id="struct_player_html_a4a2fcb0a816a0b9121a5ba00d429c55a"><div class="ttname"><a href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">Player::newestBomb</a></div><div class="ttdeci">int newestBomb</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:219</div></div>
+<div class="ttc" id="struct_player_html_a60fad3578d62e8d11e65911337a13244"><div class="ttname"><a href="struct_player.html#a60fad3578d62e8d11e65911337a13244">Player::coords</a></div><div class="ttdeci">XY coords</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:212</div></div>
+<div class="ttc" id="struct_bomb_html_a62a917b182cdb7bfcb3238b8a3b9eb79"><div class="ttname"><a href="struct_bomb.html#a62a917b182cdb7bfcb3238b8a3b9eb79">Bomb::size</a></div><div class="ttdeci">int size</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:190</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2aae05ab2dd61f661d48e4e64abee044e4">fireRange</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:107</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a584760b2d7efe76cf80d3553a8c1efe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a584760b2d7efe76cf80d3553a8c1efe1">&#9670;&nbsp;</a></span>placeBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void placeBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structtile.html">tile</a> **&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stawia pudelko na kafelku na ktorym stoi gracz. Funkcja dostepna tylko w trybie debugu. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bitmap</td><td>wskaznik na mape gry </td></tr>
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+    <tr><td class="paramname">gridSize</td><td>wielkosc mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                           {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span> (bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a> &amp;&amp; bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].type != <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df">fireTile</a>) {</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        bitmap[player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a>][player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a>].<a class="code" href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">type</a> = <a class="code" href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a96017624794e66239cbad6f80455af4a">boxTile</a>;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div><div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a96017624794e66239cbad6f80455af4a"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a96017624794e66239cbad6f80455af4a">boxTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:117</div></div>
+<div class="ttc" id="structtile_html_a2f72cb93888f4c4a2b5f6511e59bf30c"><div class="ttname"><a href="structtile.html#a2f72cb93888f4c4a2b5f6511e59bf30c">tile::type</a></div><div class="ttdeci">tileType type</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:182</div></div>
+<div class="ttc" id="struct_x_y_html_a29c62a4354023af09e8457601e41d229"><div class="ttname"><a href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">XY::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:175</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a77ea44b25a2a98989a9b0ccd0aa146df">fireTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:120</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b"><div class="ttname"><a href="enums_structs_macros_8h.html#adca33e9a9e3b9e5360ac3dfe76bc2257a0de0410262c6ee1ac4cb4365793b567b">bombTile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:119</div></div>
+<div class="ttc" id="struct_x_y_html_a5260fedc448051582dbf7f4cbd2d3dfe"><div class="ttname"><a href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">XY::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:176</div></div>
+<div class="ttc" id="struct_player_html_a60fad3578d62e8d11e65911337a13244"><div class="ttname"><a href="struct_player.html#a60fad3578d62e8d11e65911337a13244">Player::coords</a></div><div class="ttdeci">XY coords</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:212</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5efb7a84db12c3fd1a47a3d916e0f3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efb7a84db12c3fd1a47a3d916e0f3ea">&#9670;&nbsp;</a></span>reInitPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reInitPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gameTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reinicjalizuje gracza, tj. czesc danych ustawia mu na nowo </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+    <tr><td class="paramname">gameTime</td><td>czas, w ktorym gracz ma skonczyc plansze </td></tr>
+    <tr><td class="paramname">gridSize</td><td>wielkosc mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                              {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">x</a> = 1;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a60fad3578d62e8d11e65911337a13244">coords</a>.<a class="code" href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">y</a> = gridSize - 2;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> = gameTime + PLAYER_APPEAR_TIME;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    player-&gt;<a class="code" href="struct_player.html#aeb08943a32834515e66222d2e948292d">status</a> = <a class="code" href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8">appearing</a>; <span class="comment">//previous = advancing</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10; i++) {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[i].<a class="code" href="struct_bomb.html#a2fa3684effcc6e03d4ca9d47cc92c0b4">statFlag</a> != <a class="code" href="enums_structs_macros_8h.html#a85862f8bba17794a87d664e16fe33acbae8654263bd8adf1d0922f427d8f3fc1b">empty</a>) {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            player-&gt;<a class="code" href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">bombList</a>[i].<a class="code" href="struct_bomb.html#a2fa3684effcc6e03d4ca9d47cc92c0b4">statFlag</a> = <a class="code" href="enums_structs_macros_8h.html#a85862f8bba17794a87d664e16fe33acbae8654263bd8adf1d0922f427d8f3fc1b">empty</a>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a>]++;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">newestBomb</a> = 0;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    player-&gt;<a class="code" href="struct_player.html#a284c4526d6934eef1ea29f4aa61ea9e9">oldestBomb</a> = 0;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div><div class="ttc" id="struct_player_html_aeb08943a32834515e66222d2e948292d"><div class="ttname"><a href="struct_player.html#aeb08943a32834515e66222d2e948292d">Player::status</a></div><div class="ttdeci">Status status</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:213</div></div>
+<div class="ttc" id="struct_player_html_a8fb3de478f4a924ee6b9c22a168d1807"><div class="ttname"><a href="struct_player.html#a8fb3de478f4a924ee6b9c22a168d1807">Player::bombList</a></div><div class="ttdeci">Bomb bombList[MAX_BOMBS]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:218</div></div>
+<div class="ttc" id="struct_bomb_html_a2fa3684effcc6e03d4ca9d47cc92c0b4"><div class="ttname"><a href="struct_bomb.html#a2fa3684effcc6e03d4ca9d47cc92c0b4">Bomb::statFlag</a></div><div class="ttdeci">bombState statFlag</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:196</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a13c4993fbea798bb51cfc7f861edc538">bombsAvalible</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:108</div></div>
+<div class="ttc" id="struct_player_html_a9f5df822bb76dbd172b957db9bb33458"><div class="ttname"><a href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">Player::timeLeft</a></div><div class="ttdeci">int timeLeft</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:216</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a85862f8bba17794a87d664e16fe33acbae8654263bd8adf1d0922f427d8f3fc1b"><div class="ttname"><a href="enums_structs_macros_8h.html#a85862f8bba17794a87d664e16fe33acbae8654263bd8adf1d0922f427d8f3fc1b">empty</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:129</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="struct_x_y_html_a29c62a4354023af09e8457601e41d229"><div class="ttname"><a href="struct_x_y.html#a29c62a4354023af09e8457601e41d229">XY::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:175</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8"><div class="ttname"><a href="enums_structs_macros_8h.html#a67a0db04d321a74b7e7fcfd3f1a3f70ba7b486325aaaa32c64faa7f663fd597f8">appearing</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:169</div></div>
+<div class="ttc" id="struct_x_y_html_a5260fedc448051582dbf7f4cbd2d3dfe"><div class="ttname"><a href="struct_x_y.html#a5260fedc448051582dbf7f4cbd2d3dfe">XY::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:176</div></div>
+<div class="ttc" id="struct_player_html_a4a2fcb0a816a0b9121a5ba00d429c55a"><div class="ttname"><a href="struct_player.html#a4a2fcb0a816a0b9121a5ba00d429c55a">Player::newestBomb</a></div><div class="ttdeci">int newestBomb</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:219</div></div>
+<div class="ttc" id="struct_player_html_a60fad3578d62e8d11e65911337a13244"><div class="ttname"><a href="struct_player.html#a60fad3578d62e8d11e65911337a13244">Player::coords</a></div><div class="ttdeci">XY coords</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:212</div></div>
+<div class="ttc" id="struct_player_html_a284c4526d6934eef1ea29f4aa61ea9e9"><div class="ttname"><a href="struct_player.html#a284c4526d6934eef1ea29f4aa61ea9e9">Player::oldestBomb</a></div><div class="ttdeci">int oldestBomb</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:220</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6e8f58f6734309e9aebc233f368fd706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8f58f6734309e9aebc233f368fd706">&#9670;&nbsp;</a></span>resetPlayerStatics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resetPlayerStatics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wywoluje funkcje zawierajace zmienne statyczne tak, by je zresetowac </p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                          {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="player_01stuff_8c.html#aa4f3417509eb26ec6d697e5e083950af">checkPlayer</a>(NULL, NULL, 0, 1);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div><div class="ttc" id="player_01stuff_8c_html_aa4f3417509eb26ec6d697e5e083950af"><div class="ttname"><a href="player_01stuff_8c.html#aa4f3417509eb26ec6d697e5e083950af">checkPlayer</a></div><div class="ttdeci">void checkPlayer(tile **bitmap, Player *player, int gameTime, int reset)</div><div class="ttdef"><b>Definition:</b> player stuff.c:170</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a80b3c0b2fbe1f2410f2c17f7dd9e1cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b3c0b2fbe1f2410f2c17f7dd9e1cd5">&#9670;&nbsp;</a></span>shieldSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shieldSwitch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wlacza lub wylacza ulepszenie tarczy gracza. Dostepne tylko w trybie debugowania </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                                  {</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>]) {</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>] = 0;</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">else</span> {</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        player-&gt;<a class="code" href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">upgrades</a>[<a class="code" href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a>] = 1;</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        player-&gt;<a class="code" href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">brokenShieldTimer</a> = -1;</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div><div class="ttc" id="enums_structs_macros_8h_html_a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8"><div class="ttname"><a href="enums_structs_macros_8h.html#a309b25f23fe120468075b0bf109cc4a2a3f3c47853492dd955565a6b05c176bb8">shield</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:110</div></div>
+<div class="ttc" id="struct_player_html_ac7640ac0f1e50faad29e878fc91fc844"><div class="ttname"><a href="struct_player.html#ac7640ac0f1e50faad29e878fc91fc844">Player::upgrades</a></div><div class="ttdeci">int upgrades[5]</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:214</div></div>
+<div class="ttc" id="struct_player_html_aca0817efc57fca8f014e40d2c108f7bb"><div class="ttname"><a href="struct_player.html#aca0817efc57fca8f014e40d2c108f7bb">Player::brokenShieldTimer</a></div><div class="ttdeci">double brokenShieldTimer</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:217</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1e5f54d55864ca24e1dbcd2ab82724a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5f54d55864ca24e1dbcd2ab82724a3">&#9670;&nbsp;</a></span>waitForGame_over()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int waitForGame_over </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sprawdza, czy minelo dosc duzo czasu, zeby zakonczyc gre, po przegranej przeciwnika </p><dl class="section return"><dt>Zwraca</dt><dd>1 kiedy minelo dosc duzo czasu, 0 kiedy nalezy jeszcze czekac </dd></dl>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                       {</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> wait = -1;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">if</span> (wait == -1) {</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        wait = glfwGetTime() + 2; <span class="comment">//+GAME_OVER_TIME</span></div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">if</span> (wait - glfwGetTime() &lt;= 0) {</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        wait = -1;</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a6d51f48bb638c4054d32b5362941be0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d51f48bb638c4054d32b5362941be0e">&#9670;&nbsp;</a></span>waitForNextStageAndSumScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int waitForNextStageAndSumScore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sprawdza, czy minelo dosc duzo czasu, zeby zakonczyc gre, po wygranej przeciwnika oraz przelewa pozostaly czas gracza*10 do jego punktow. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>wskaznik na gracza </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>1 kiedy minelo dosc duzo czasu, 0 kiedy nalezy jeszcze czekac </dd></dl>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                                {</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> wait = -1;</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span> (player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> &gt; 0) {</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span> (wait == -1) {</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            wait = glfwGetTime() + TIME_COUNT_SPEED;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wait - glfwGetTime() &lt;= 0) {</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            player-&gt;<a class="code" href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">score</a> += 1;</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            player-&gt;<a class="code" href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">timeLeft</a> -= 1;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            wait = -1;</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">if</span> (wait == -1) {</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        wait = glfwGetTime() + 3;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wait - glfwGetTime() &lt;= 0) {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        wait = -1;</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div><div class="ttc" id="struct_player_html_ace6abae8d66534ad0a1fd6458f786a6e"><div class="ttname"><a href="struct_player.html#ace6abae8d66534ad0a1fd6458f786a6e">Player::score</a></div><div class="ttdeci">int score</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:215</div></div>
+<div class="ttc" id="struct_player_html_a9f5df822bb76dbd172b957db9bb33458"><div class="ttname"><a href="struct_player.html#a9f5df822bb76dbd172b957db9bb33458">Player::timeLeft</a></div><div class="ttdeci">int timeLeft</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:216</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['check_5fparam',['check_param',['../_test_arg_8h.html#a9181608eceb82c4122ccb84ee11b440c',1,'check_param(int argc, char **argv, int *howManyEnemies, int *howManyBoxes, int *howManyUpgrades, int *gridSize, int *gameTime, int *debugMode, int *helpSwitch):&#160;TestyArg.c'],['../_testy_arg_8c.html#a9181608eceb82c4122ccb84ee11b440c',1,'check_param(int argc, char **argv, int *howManyEnemies, int *howManyBoxes, int *howManyUpgrades, int *gridSize, int *gameTime, int *debugMode, int *helpSwitch):&#160;TestyArg.c']]],
+  ['checkplayer',['checkPlayer',['../player_8c.html#aa4f3417509eb26ec6d697e5e083950af',1,'checkPlayer(tile **bitmap, Player *player, int gameTime, int reset):&#160;player.c'],['../player_8h.html#aa4f3417509eb26ec6d697e5e083950af',1,'checkPlayer(tile **bitmap, Player *player, int gameTime, int reset):&#160;player.c']]],
+  ['cleantile',['cleanTile',['../manage_01bombs_8_c.html#a5213a6ff696c7e7d6905b083246a6fe7',1,'cleanTile(tile *currTile):&#160;manage bombs.C'],['../manage_01bombs_8h.html#a5213a6ff696c7e7d6905b083246a6fe7',1,'cleanTile(tile *currTile):&#160;manage bombs.C']]],
+  ['cleanup',['cleanUp',['../manage_01bombs_8_c.html#a1f413c301f0ada039af77930818a86e7',1,'cleanUp(int currentBombID, Player *player, tile **bitmap):&#160;manage bombs.C'],['../manage_01bombs_8h.html#a1f413c301f0ada039af77930818a86e7',1,'cleanUp(int currentBombID, Player *player, tile **bitmap):&#160;manage bombs.C']]]
+];

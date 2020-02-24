@@ -1,0 +1,57 @@
+\hypertarget{map_mem_and_gen_8h}{}\section{Dokumentacja pliku map\+Mem\+And\+Gen.\+h}
+\label{map_mem_and_gen_8h}\index{map\+Mem\+And\+Gen.\+h@{map\+Mem\+And\+Gen.\+h}}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{map_mem_and_gen_8h_a79c9e27d3c57553958894268f3a01c4a}{dealocate\+Map}} (\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$($\ast$bitmap), int grid\+Size)
+\item 
+void \mbox{\hyperlink{map_mem_and_gen_8h_a43eeac338d1303fbd153aaafa8bca5d2}{allocate\+Map}} (\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$($\ast$bitmap), int grid\+Size)
+\item 
+void \mbox{\hyperlink{map_mem_and_gen_8h_ad415723e19752c64af3f047d485af94e}{generate\+Map}} (\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$bitmap, int grid\+Size, int how\+Many\+Boxes, int how\+Many\+Upgrades)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{map_mem_and_gen_8h_a43eeac338d1303fbd153aaafa8bca5d2}\label{map_mem_and_gen_8h_a43eeac338d1303fbd153aaafa8bca5d2}} 
+\index{map\+Mem\+And\+Gen.\+h@{map\+Mem\+And\+Gen.\+h}!allocate\+Map@{allocate\+Map}}
+\index{allocate\+Map@{allocate\+Map}!map\+Mem\+And\+Gen.\+h@{map\+Mem\+And\+Gen.\+h}}
+\subsubsection{\texorpdfstring{allocate\+Map()}{allocateMap()}}
+{\footnotesize\ttfamily void allocate\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$$\ast$}]{bitmap,  }\item[{int}]{grid\+Size }\end{DoxyParamCaption})}
+
+Alokuje pamiec dla mapy o okreslonej wielkosci. 
+\begin{DoxyParams}{Parametry}
+{\em bitmap} & wskaznik na wskaznik na mape gry \\
+\hline
+{\em grid\+Size} & wielkosc mapy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{map_mem_and_gen_8h_a79c9e27d3c57553958894268f3a01c4a}\label{map_mem_and_gen_8h_a79c9e27d3c57553958894268f3a01c4a}} 
+\index{map\+Mem\+And\+Gen.\+h@{map\+Mem\+And\+Gen.\+h}!dealocate\+Map@{dealocate\+Map}}
+\index{dealocate\+Map@{dealocate\+Map}!map\+Mem\+And\+Gen.\+h@{map\+Mem\+And\+Gen.\+h}}
+\subsubsection{\texorpdfstring{dealocate\+Map()}{dealocateMap()}}
+{\footnotesize\ttfamily void dealocate\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$$\ast$}]{bitmap,  }\item[{int}]{grid\+Size }\end{DoxyParamCaption})}
+
+Dealokuje pamiec mapy o okreslonej wielkosci. 
+\begin{DoxyParams}{Parametry}
+{\em bitmap} & wskaznik na wskaznik na mape gry \\
+\hline
+{\em grid\+Size} & wielkosc mapy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{map_mem_and_gen_8h_ad415723e19752c64af3f047d485af94e}\label{map_mem_and_gen_8h_ad415723e19752c64af3f047d485af94e}} 
+\index{map\+Mem\+And\+Gen.\+h@{map\+Mem\+And\+Gen.\+h}!generate\+Map@{generate\+Map}}
+\index{generate\+Map@{generate\+Map}!map\+Mem\+And\+Gen.\+h@{map\+Mem\+And\+Gen.\+h}}
+\subsubsection{\texorpdfstring{generate\+Map()}{generateMap()}}
+{\footnotesize\ttfamily void generate\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$}]{bitmap,  }\item[{int}]{grid\+Size,  }\item[{int}]{how\+Many\+Boxes,  }\item[{int}]{how\+Many\+Upgrades }\end{DoxyParamCaption})}
+
+Generuje mape gry -\/ stawia kolumny, pudelka i ulepszenia 
+\begin{DoxyParams}{Parametry}
+{\em bitmap} & wskaznik na mape gry \\
+\hline
+{\em grid\+Size} & wielkosc mapy (NxN) \\
+\hline
+{\em how\+Many\+Boxes} & ile na mapie ma sie znajdowac sie pudel \\
+\hline
+{\em how\+Many\+Upgrades} & ile na mapie ma sie znajdowac ulepszen \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,89 @@
+\hypertarget{fonts_8h}{}\section{Dokumentacja pliku fonts.\+h}
+\label{fonts_8h}\index{fonts.\+h@{fonts.\+h}}
+\subsection*{Definicje typów}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \mbox{\hyperlink{fonts_8h_a12644d25a363aedb5ac7d8e39f209213}{sign}})\mbox{[}8\mbox{]}\mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{fonts_8h_a7685e5e2ae0ee4be3a7204de79a930b7}{translate\+Word}} (\mbox{\hyperlink{fonts_8h_a12644d25a363aedb5ac7d8e39f209213}{sign}} $\ast$$\ast$signs, char $\ast$word)
+\item 
+void \mbox{\hyperlink{fonts_8h_a88b562dd49ffda3ef38b1606ee73002d}{write\+Static\+Data}} ()
+\item 
+void \mbox{\hyperlink{fonts_8h_a03c8a55a63beaa74e36556aa2a00e91e}{write\+Dynamic\+Data}} (int highscore, int score, int time\+Left)
+\item 
+void \mbox{\hyperlink{fonts_8h_adec3b5a9b9c69e225eb5de94e101f37a}{write\+Pause\+Message}} (\mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}} pause\+Type)
+\item 
+void \mbox{\hyperlink{fonts_8h_ad6d4ca03d171090ee4998373fccd7284}{write\+Pause\+Message\+Score}} (int score)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja definicji typów}
+\mbox{\Hypertarget{fonts_8h_a12644d25a363aedb5ac7d8e39f209213}\label{fonts_8h_a12644d25a363aedb5ac7d8e39f209213}} 
+\index{fonts.\+h@{fonts.\+h}!sign@{sign}}
+\index{sign@{sign}!fonts.\+h@{fonts.\+h}}
+\subsubsection{\texorpdfstring{sign}{sign}}
+{\footnotesize\ttfamily typedef int($\ast$ sign)\mbox{[}8\mbox{]}\mbox{[}5\mbox{]}}
+
+Wskaznik na tablice reprezentujaca znak w postaci bitow -\/ pixeli 
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{fonts_8h_a7685e5e2ae0ee4be3a7204de79a930b7}\label{fonts_8h_a7685e5e2ae0ee4be3a7204de79a930b7}} 
+\index{fonts.\+h@{fonts.\+h}!translate\+Word@{translate\+Word}}
+\index{translate\+Word@{translate\+Word}!fonts.\+h@{fonts.\+h}}
+\subsubsection{\texorpdfstring{translate\+Word()}{translateWord()}}
+{\footnotesize\ttfamily void translate\+Word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fonts_8h_a12644d25a363aedb5ac7d8e39f209213}{sign}} $\ast$$\ast$}]{signs,  }\item[{char $\ast$}]{word }\end{DoxyParamCaption})}
+
+Zamienia wejsciowy ciag znakow, ta tablice wskaznikow na tablice reprezentujace znaki w postaci bitow -\/ pixeli 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt out}  & {\em signs} & wskaznik na wskaznik na tablice wskaznikow na tablice reprezentujace znaki w postaci bitow -\/ pixeli \\
+\hline
+ & {\em word} & ciag znakow do przekonwertowania \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fonts_8h_a03c8a55a63beaa74e36556aa2a00e91e}\label{fonts_8h_a03c8a55a63beaa74e36556aa2a00e91e}} 
+\index{fonts.\+h@{fonts.\+h}!write\+Dynamic\+Data@{write\+Dynamic\+Data}}
+\index{write\+Dynamic\+Data@{write\+Dynamic\+Data}!fonts.\+h@{fonts.\+h}}
+\subsubsection{\texorpdfstring{write\+Dynamic\+Data()}{writeDynamicData()}}
+{\footnotesize\ttfamily void write\+Dynamic\+Data (\begin{DoxyParamCaption}\item[{int}]{highscore,  }\item[{int}]{score,  }\item[{int}]{time\+Left }\end{DoxyParamCaption})}
+
+Zapisuje w obszarze okna obok mapy aktualna ilosc punktow, dotychczasowa najwieksza ilosc punktow oraz pozostaly czas gracza pod odpowiednimi tytulami 
+\begin{DoxyParams}{Parametry}
+{\em highscore} & najwyzsza dotychczasowa ilosc punktow \\
+\hline
+{\em score} & aktualna ilosc punktow \\
+\hline
+{\em time\+Left} & pozostaly czas gracza \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fonts_8h_adec3b5a9b9c69e225eb5de94e101f37a}\label{fonts_8h_adec3b5a9b9c69e225eb5de94e101f37a}} 
+\index{fonts.\+h@{fonts.\+h}!write\+Pause\+Message@{write\+Pause\+Message}}
+\index{write\+Pause\+Message@{write\+Pause\+Message}!fonts.\+h@{fonts.\+h}}
+\subsubsection{\texorpdfstring{write\+Pause\+Message()}{writePauseMessage()}}
+{\footnotesize\ttfamily void write\+Pause\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}}}]{pause\+Type }\end{DoxyParamCaption})}
+
+Wypisuje na okno pauzy wiadomosc, zalezaca od typu pauzy 
+\begin{DoxyParams}{Parametry}
+{\em pause\+Type} & typ pauzy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fonts_8h_ad6d4ca03d171090ee4998373fccd7284}\label{fonts_8h_ad6d4ca03d171090ee4998373fccd7284}} 
+\index{fonts.\+h@{fonts.\+h}!write\+Pause\+Message\+Score@{write\+Pause\+Message\+Score}}
+\index{write\+Pause\+Message\+Score@{write\+Pause\+Message\+Score}!fonts.\+h@{fonts.\+h}}
+\subsubsection{\texorpdfstring{write\+Pause\+Message\+Score()}{writePauseMessageScore()}}
+{\footnotesize\ttfamily void write\+Pause\+Message\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+Wypisuje na okno pauzy aktualna ilosc punktow 
+\begin{DoxyParams}{Parametry}
+{\em score} & aktualna ilosc punktow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fonts_8h_a88b562dd49ffda3ef38b1606ee73002d}\label{fonts_8h_a88b562dd49ffda3ef38b1606ee73002d}} 
+\index{fonts.\+h@{fonts.\+h}!write\+Static\+Data@{write\+Static\+Data}}
+\index{write\+Static\+Data@{write\+Static\+Data}!fonts.\+h@{fonts.\+h}}
+\subsubsection{\texorpdfstring{write\+Static\+Data()}{writeStaticData()}}
+{\footnotesize\ttfamily void write\+Static\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Zapisuje w obszarze okna obok mapy tytuly informacji\+: aktualne punkty, najwieksza ilosc punktow oraz pozostaly czas gracza 

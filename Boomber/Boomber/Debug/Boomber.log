@@ -1,0 +1,62 @@
+﻿cl : Command line warning D9025: overriding '/sdl' with '/GS-'
+  draw.c
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(14): warning C4020: 'drawPortal': too many actual parameters
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(21): warning C4013: 'writeStaticData' undefined; assuming extern returning int
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(32): warning C4013: 'writePauseMessage' undefined; assuming extern returning int
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(88): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(119): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(123): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(127): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(131): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(142): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(145): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(182): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(185): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(227): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(236): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(243): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(264): warning C4244: 'function': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(278): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(286): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(293): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(296): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(314): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(367): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(370): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(376): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(379): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(386): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(389): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(395): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(398): warning C4305: 'function': truncation from 'double' to 'float'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\draw.c(425): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+  main.c
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(158): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(164): warning C4047: '!=': 'int *' differs in levels of indirection from 'int'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(165): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(175): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(206): warning C4047: 'function': 'tile *' differs in levels of indirection from 'tile **'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(206): warning C4024: 'initEnemies': different types for formal and actual parameter 2
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(254): warning C4013: 'exit' undefined; assuming extern returning int
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(296): warning C4113: 'void (__cdecl *)(GLFWwindow *,int,int,int,int,tile ***,Player *,int *,int *)' differs in parameter lists from 'GLFWkeyfun'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(304): warning C4087: 'glfwGetTime': declared with 'void' parameter list
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(364): warning C4047: 'function': 'tile *' differs in levels of indirection from 'tile **'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(364): warning C4024: 'initEnemies': different types for formal and actual parameter 2
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(373): warning C4047: 'function': 'tile *' differs in levels of indirection from 'tile **'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(373): warning C4024: 'initEnemies': different types for formal and actual parameter 2
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(266): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(268): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\main.c(383): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+  mapMemAndGen.c
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\mapmemandgen.c(8): warning C4013: 'free' undefined; assuming extern returning int
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\mapmemandgen.c(15): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\mapmemandgen.c(15): warning C4047: '=': 'tile **' differs in levels of indirection from 'int'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\mapmemandgen.c(17): warning C4047: '=': 'tile *' differs in levels of indirection from 'int'
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\mapmemandgen.c(26): warning C4013: 'srand' undefined; assuming extern returning int
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\mapmemandgen.c(26): warning C4013: 'time' undefined; assuming extern returning int
+c:\users\bebok\desktop\c\pk2 projekt\boomber\boomber\mapmemandgen.c(45): warning C4013: 'rand' undefined; assuming extern returning int
+  Generating Code...
+  Boomber.vcxproj -> C:\Users\Bebok\Desktop\C\pk2 projekt\Boomber\Debug\Boomber.exe

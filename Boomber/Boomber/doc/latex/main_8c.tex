@@ -1,0 +1,170 @@
+\hypertarget{main_8c}{}\section{Dokumentacja pliku main.\+c}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+{\ttfamily \#include $<$G\+L\+F\+W\textbackslash{}glfw3.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}enums\+Structs\+Macros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}manage bombs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Enemies.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fonts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}highscore\+File.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Test\+Arg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}map\+Mem\+And\+Gen.\+h\char`\"{}}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a6c563ee99539c7a1d3c60981030d08e2}{pause\+Game}} (\mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}} $\ast$pause\+Setter, double $\ast$d\+Time\+Setter)
+\item 
+int \mbox{\hyperlink{main_8c_a6d94180caf155759174ae3726f54cb8f}{un\+Pause\+Game}} (\mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}} $\ast$pause\+Setter, double $\ast$d\+Time\+Setter)
+\item 
+static void \mbox{\hyperlink{main_8c_a72aa3ddc1c670ba564c118d169ae585d}{key\+\_\+callback}} (G\+L\+F\+Wwindow $\ast$window, int key, int scancode, int action, int mods, \mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$$\ast$bitmap\+Setter, \mbox{\hyperlink{struct_player}{Player}} $\ast$player\+Setter, int $\ast$debug\+Mode\+Setter, int $\ast$grid\+Size\+Setter)
+\item 
+void \mbox{\hyperlink{main_8c_a4ee391c8bab624943c822faafb2c320e}{error\+\_\+callback}} (int error, const char $\ast$description)
+\item 
+void \mbox{\hyperlink{main_8c_a659f80448aca6bb39f7f6b795f9a50ee}{set\+Defaults\+If\+Necessary}} (int $\ast$how\+Many\+Enemies, int $\ast$how\+Many\+Boxes, int $\ast$how\+Many\+Upgrades, int $\ast$grid\+Size, int $\ast$game\+Time, int $\ast$debug\+Mode)
+\item 
+void \mbox{\hyperlink{main_8c_ac6ea916f5fca3243cc407afa17645675}{init}} (\mbox{\hyperlink{struct_enemy}{Enemy}} enemy\+Array\mbox{[}M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+E\+S\+\_\+\+P\+E\+R\+\_\+\+M\+AP\mbox{]}, \mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$($\ast$bitmap), \mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}} $\ast$pause\+Type, double $\ast$d\+Time, \mbox{\hyperlink{struct_player}{Player}} $\ast$player, int how\+Many\+Enemies, int how\+Many\+Boxes, int how\+Many\+Upgrades, int $\ast$grid\+Size, int game\+Time, int $\ast$debug\+Mode, int list\+Array\mbox{[}6\mbox{]})
+\item 
+void \mbox{\hyperlink{main_8c_af05debd08f68a8b54b14fc24891c1de1}{reset\+Times}} (double $\ast$d\+Time)
+\item 
+\mbox{\Hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{main_8c_a4ee391c8bab624943c822faafb2c320e}\label{main_8c_a4ee391c8bab624943c822faafb2c320e}} 
+\index{main.\+c@{main.\+c}!error\+\_\+callback@{error\+\_\+callback}}
+\index{error\+\_\+callback@{error\+\_\+callback}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{error\+\_\+callback()}{error\_callback()}}
+{\footnotesize\ttfamily void error\+\_\+callback (\begin{DoxyParamCaption}\item[{int}]{error,  }\item[{const char $\ast$}]{description }\end{DoxyParamCaption})}
+
+Wypisuje do konsoli blad. 
+\begin{DoxyParams}{Parametry}
+{\em error} & numer bledu \\
+\hline
+{\em description} & opis bledu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_ac6ea916f5fca3243cc407afa17645675}\label{main_8c_ac6ea916f5fca3243cc407afa17645675}} 
+\index{main.\+c@{main.\+c}!init@{init}}
+\index{init@{init}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enemy}{Enemy}}}]{enemy\+Array\mbox{[}\+M\+A\+X\+\_\+\+E\+N\+E\+M\+I\+E\+S\+\_\+\+P\+E\+R\+\_\+\+M\+A\+P\mbox{]},  }\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$$\ast$}]{bitmap,  }\item[{\mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}} $\ast$}]{pause\+Type,  }\item[{double $\ast$}]{d\+Time,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player,  }\item[{int}]{how\+Many\+Enemies,  }\item[{int}]{how\+Many\+Boxes,  }\item[{int}]{how\+Many\+Upgrades,  }\item[{int $\ast$}]{grid\+Size,  }\item[{int}]{game\+Time,  }\item[{int $\ast$}]{debug\+Mode,  }\item[{int}]{list\+Array\mbox{[}6\mbox{]} }\end{DoxyParamCaption})}
+
+Inicjalizuje gre oraz ustawia statyczne zmienne w konkretnych funkcjach 
+\begin{DoxyParams}{Parametry}
+{\em enemy} & wskaznik na przeciwnika do przesuniecia \\
+\hline
+{\em bitmap} & wskaznik na wskaznik na mape gry \\
+\hline
+{\em pause\+Type} & Wskaznik na typ pauzy. Sluzy do ustawienia zmiennej statycznej wewnatrz funkcji. \\
+\hline
+{\em d\+Time} & Wskaznik na zmienna pamietajaca czas gry sprzed pauzy. Sluzy do ustawienia zmiennej statycznej wewnatrz funkcji. \\
+\hline
+{\em player} & wskaznik na gracza \\
+\hline
+{\em how\+Many\+Enemies} & Ile ma sie znajdowac przeciwnikow na mapie. \\
+\hline
+{\em how\+Many\+Boxes} & Ile ma sie znajdowac pudelek na mapie. \\
+\hline
+{\em how\+Many\+Upgrades} & Ile ma sie znajdowac ulepszen na mapie. \\
+\hline
+{\em grid\+Size} & wielkosc mapy \\
+\hline
+{\em game\+Time} & czas gry \\
+\hline
+{\em debug\+Mode} & zmienna ustawiajaca debug\+Mode gry \\
+\hline
+{\em \mbox{[}out} & list\+Array Tablica przechowujaca indeksy gl\+List. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a72aa3ddc1c670ba564c118d169ae585d}\label{main_8c_a72aa3ddc1c670ba564c118d169ae585d}} 
+\index{main.\+c@{main.\+c}!key\+\_\+callback@{key\+\_\+callback}}
+\index{key\+\_\+callback@{key\+\_\+callback}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{key\+\_\+callback()}{key\_callback()}}
+{\footnotesize\ttfamily static void key\+\_\+callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scancode,  }\item[{int}]{action,  }\item[{int}]{mods,  }\item[{\mbox{\hyperlink{structtile}{tile}} $\ast$$\ast$$\ast$}]{bitmap\+Setter,  }\item[{\mbox{\hyperlink{struct_player}{Player}} $\ast$}]{player\+Setter,  }\item[{int $\ast$}]{debug\+Mode\+Setter,  }\item[{int $\ast$}]{grid\+Size\+Setter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wywoluje odpowiednie funkcje odpowiadajace wcisnieciu odpowiednich klawiszy 
+\begin{DoxyParams}{Parametry}
+{\em window} & wskaznik na strukture okna glfw. \\
+\hline
+{\em key} & Jaki klawisz. \\
+\hline
+{\em scancode} & \\
+\hline
+{\em action} & Akcja klawisza (nacisniety czy puszczony). \\
+\hline
+{\em mods} & \\
+\hline
+{\em bitmap} & wskaznik na wskaznik na mape gry. Sluzy do ustawienia zmiennych statycznych wewnatrz funkcji) \\
+\hline
+{\em player\+Setter} & wskaznik gracza. Sluzy do ustawienia zmiennych statycznych wewnatrz funkcji) \\
+\hline
+{\em debug\+Mode\+Setter} & wskaznik zmienna ustawiajaca debug\+Mode gry. Sluzy do ustawienia zmiennych statycznych wewnatrz funkcji) \\
+\hline
+{\em grid\+Size\+Setter} & wskaznik zmienna przechowujaca wielkosc mapy. Sluzy do ustawienia zmiennych statycznych wewnatrz funkcji) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a6c563ee99539c7a1d3c60981030d08e2}\label{main_8c_a6c563ee99539c7a1d3c60981030d08e2}} 
+\index{main.\+c@{main.\+c}!pause\+Game@{pause\+Game}}
+\index{pause\+Game@{pause\+Game}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{pause\+Game()}{pauseGame()}}
+{\footnotesize\ttfamily void pause\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}} $\ast$}]{pause\+Setter,  }\item[{double $\ast$}]{d\+Time\+Setter }\end{DoxyParamCaption})}
+
+Pauzuje gre i zapisuje aktualny czas 
+\begin{DoxyParams}{Parametry}
+{\em pause\+Setter} & Wskaznik na typ pauzy. Sluzy do ustawienia zmiennej statycznej wewnatrz funkcji. \\
+\hline
+{\em d\+Time\+Setter} & Wskaznik na zmienna pamietajaca czas gry sprzed pauzy. Sluzy do ustawienia zmiennej statycznej wewnatrz funkcji. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_af05debd08f68a8b54b14fc24891c1de1}\label{main_8c_af05debd08f68a8b54b14fc24891c1de1}} 
+\index{main.\+c@{main.\+c}!reset\+Times@{reset\+Times}}
+\index{reset\+Times@{reset\+Times}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{reset\+Times()}{resetTimes()}}
+{\footnotesize\ttfamily void reset\+Times (\begin{DoxyParamCaption}\item[{double $\ast$}]{d\+Time }\end{DoxyParamCaption})}
+
+Wywoluje funkcje resetujace wszystkie funkcje statyczne oraz resetuje czas 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt out}  & {\em d\+Time} & wskaznik na aktualny czas gry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a659f80448aca6bb39f7f6b795f9a50ee}\label{main_8c_a659f80448aca6bb39f7f6b795f9a50ee}} 
+\index{main.\+c@{main.\+c}!set\+Defaults\+If\+Necessary@{set\+Defaults\+If\+Necessary}}
+\index{set\+Defaults\+If\+Necessary@{set\+Defaults\+If\+Necessary}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{set\+Defaults\+If\+Necessary()}{setDefaultsIfNecessary()}}
+{\footnotesize\ttfamily void set\+Defaults\+If\+Necessary (\begin{DoxyParamCaption}\item[{int $\ast$}]{how\+Many\+Enemies,  }\item[{int $\ast$}]{how\+Many\+Boxes,  }\item[{int $\ast$}]{how\+Many\+Upgrades,  }\item[{int $\ast$}]{grid\+Size,  }\item[{int $\ast$}]{game\+Time,  }\item[{int $\ast$}]{debug\+Mode }\end{DoxyParamCaption})}
+
+Ustawia wartosci domyslne przekazanym zmiennym, jesli nie zostaly ustawione. 
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt out}  & {\em how\+Many\+Enemies} & Ile ma sie znajdowac przeciwnikow na mapie. \\
+\hline
+\mbox{\tt out}  & {\em how\+Many\+Boxes} & Ile ma sie znajdowac pudelek na mapie. \\
+\hline
+\mbox{\tt out}  & {\em how\+Many\+Upgrades} & Ile ma sie znajdowac ulepszen na mapie. \\
+\hline
+\mbox{\tt out}  & {\em grid\+Size} & wielkosc mapy \\
+\hline
+\mbox{\tt out}  & {\em game\+Time} & czas gry \\
+\hline
+\mbox{\tt out}  & {\em debug\+Mode} & zmienna ustawiajaca debug\+Mode gry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a6d94180caf155759174ae3726f54cb8f}\label{main_8c_a6d94180caf155759174ae3726f54cb8f}} 
+\index{main.\+c@{main.\+c}!un\+Pause\+Game@{un\+Pause\+Game}}
+\index{un\+Pause\+Game@{un\+Pause\+Game}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{un\+Pause\+Game()}{unPauseGame()}}
+{\footnotesize\ttfamily int un\+Pause\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enums_structs_macros_8h_ae45d0a8d0894bddd67748ddaf76c1fb6}{Pause\+Screen\+Type}} $\ast$}]{pause\+Setter,  }\item[{double $\ast$}]{d\+Time\+Setter }\end{DoxyParamCaption})}
+
+Wylacza pauze gry i ustawia aktualny czas na czas sprzed pauzy 
+\begin{DoxyParams}{Parametry}
+{\em pause\+Setter} & Wskaznik na typ pauzy. Sluzy do ustawienia zmiennej statycznej wewnatrz funkcji. \\
+\hline
+{\em d\+Time\+Setter} & Wskaznik na zmienna pamietajaca czas gry sprzed pauzy. Sluzy do ustawienia zmiennej statycznej wewnatrz funkcji. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+1 jesli udalo sie wylaczyc pauze lub 0 jesli pauzy nie bylo 
+\end{DoxyReturn}

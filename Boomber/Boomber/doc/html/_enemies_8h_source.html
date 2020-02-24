@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Boomberman: Plik źródłowy Enemies.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Boomberman
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Enemies.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_enemies_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef ENEMIES_H</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define ENEMIES_H</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_enemies_8h.html#a7deeed86cc3886f6f9b0e4916ab6ad84">initEnemies</a>(<a class="code" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], <a class="code" href="structtile.html">tile</a>* bitmap, <span class="keywordtype">int</span> howMany, <span class="keywordtype">int</span> gridSize);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_enemies_8h.html#ac39567aeae0ae70e0860e2651e61e024">resetEnemyStatics</a>();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_enemies_8h.html#ac42ea38d9134354e0c75d95117e3d06c">addEnemy</a>(<a class="code" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], <span class="keywordtype">int</span> ID, <a class="code" href="enums_structs_macros_8h.html#ac3e413a86119db4b031458c7259e268e">EnemyType</a> type, <a class="code" href="struct_x_y.html">XY</a> coords, <a class="code" href="enums_structs_macros_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> dir);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_enemies_8h.html#a6c4cc5ffc3c0e591789e94f3d701e9e7">moveBlind</a>(<a class="code" href="struct_enemy.html">Enemy</a> *enemy, <a class="code" href="structtile.html">tile</a>** bitmap, <span class="keywordtype">int</span> gridSize);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_enemies_8h.html#a39ed02f60d706f61702f2f8bde1d8437">moveRandom</a>(<a class="code" href="struct_enemy.html">Enemy</a> *enemy, <a class="code" href="structtile.html">tile</a>** bitmap, <span class="keywordtype">int</span> gridSize);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_enemies_8h.html#ab2c7f1e643eed872226d910c298bbf24">pointTowardsPlayerIfPossible</a>(<a class="code" href="struct_enemy.html">Enemy</a>* enemy, <a class="code" href="struct_player.html">Player</a> *player);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_enemies_8h.html#a9f94c8a31f6cab79db629884ff69fae0">moveCharger</a>(<a class="code" href="struct_enemy.html">Enemy</a> *enemy, <a class="code" href="struct_player.html">Player</a> *player, <a class="code" href="structtile.html">tile</a>** bitmap, <span class="keywordtype">int</span> gridSize);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_enemies_8h.html#aed479803dd4eab38807d4a426b2bd53f">moveEnemy</a>(<a class="code" href="struct_enemy.html">Enemy</a>* enemy, <span class="keywordtype">int</span> rush, <a class="code" href="structtile.html">tile</a>** bitmap, <span class="keywordtype">int</span> gridSize);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_enemies_8h.html#ab902a925519b159e83619ce1685ee9dc">manageEnemiesAndScore</a>(<a class="code" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], <a class="code" href="struct_player.html">Player</a>* player, <a class="code" href="structtile.html">tile</a>** bitmap, <span class="keywordtype">int</span> howMany, <span class="keywordtype">int</span> gridSize, <span class="keywordtype">int</span> reset);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_enemies_8h.html#afcdd1ba30cf93846f4eab65532cbef5e">dropEnemies</a>(<a class="code" href="struct_enemy.html">Enemy</a> enemyArray[MAX_ENEMIES_PER_MAP], <a class="code" href="structtile.html">tile</a>** bitmap, <span class="keywordtype">int</span> howMany, <span class="keywordtype">int</span> gridSize);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="enums_structs_macros_8h_html_ac3e413a86119db4b031458c7259e268e"><div class="ttname"><a href="enums_structs_macros_8h.html#ac3e413a86119db4b031458c7259e268e">EnemyType</a></div><div class="ttdeci">EnemyType</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:148</div></div>
+<div class="ttc" id="_enemies_8h_html_ac42ea38d9134354e0c75d95117e3d06c"><div class="ttname"><a href="_enemies_8h.html#ac42ea38d9134354e0c75d95117e3d06c">addEnemy</a></div><div class="ttdeci">void addEnemy(Enemy enemyArray[MAX_ENEMIES_PER_MAP], int ID, EnemyType type, XY coords, Direction dir)</div><div class="ttdef"><b>Definition:</b> Enemies.c:17</div></div>
+<div class="ttc" id="struct_x_y_html"><div class="ttname"><a href="struct_x_y.html">XY</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:174</div></div>
+<div class="ttc" id="structtile_html"><div class="ttname"><a href="structtile.html">tile</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:181</div></div>
+<div class="ttc" id="_enemies_8h_html_ac39567aeae0ae70e0860e2651e61e024"><div class="ttname"><a href="_enemies_8h.html#ac39567aeae0ae70e0860e2651e61e024">resetEnemyStatics</a></div><div class="ttdeci">void resetEnemyStatics()</div><div class="ttdef"><b>Definition:</b> Enemies.c:13</div></div>
+<div class="ttc" id="_enemies_8h_html_aed479803dd4eab38807d4a426b2bd53f"><div class="ttname"><a href="_enemies_8h.html#aed479803dd4eab38807d4a426b2bd53f">moveEnemy</a></div><div class="ttdeci">int moveEnemy(Enemy *enemy, int rush, tile **bitmap, int gridSize)</div><div class="ttdef"><b>Definition:</b> Enemies.c:125</div></div>
+<div class="ttc" id="_enemies_8h_html_afcdd1ba30cf93846f4eab65532cbef5e"><div class="ttname"><a href="_enemies_8h.html#afcdd1ba30cf93846f4eab65532cbef5e">dropEnemies</a></div><div class="ttdeci">void dropEnemies(Enemy enemyArray[MAX_ENEMIES_PER_MAP], tile **bitmap, int howMany, int gridSize)</div><div class="ttdef"><b>Definition:</b> Enemies.c:263</div></div>
+<div class="ttc" id="enums_structs_macros_8h_html_a224b9163917ac32fc95a60d8c1eec3aa"><div class="ttname"><a href="enums_structs_macros_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a></div><div class="ttdeci">Direction</div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:102</div></div>
+<div class="ttc" id="struct_enemy_html"><div class="ttname"><a href="struct_enemy.html">Enemy</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:201</div></div>
+<div class="ttc" id="_enemies_8h_html_ab2c7f1e643eed872226d910c298bbf24"><div class="ttname"><a href="_enemies_8h.html#ab2c7f1e643eed872226d910c298bbf24">pointTowardsPlayerIfPossible</a></div><div class="ttdeci">int pointTowardsPlayerIfPossible(Enemy *enemy, Player *player)</div><div class="ttdef"><b>Definition:</b> Enemies.c:89</div></div>
+<div class="ttc" id="_enemies_8h_html_a6c4cc5ffc3c0e591789e94f3d701e9e7"><div class="ttname"><a href="_enemies_8h.html#a6c4cc5ffc3c0e591789e94f3d701e9e7">moveBlind</a></div><div class="ttdeci">void moveBlind(Enemy *enemy, tile **bitmap, int gridSize)</div><div class="ttdef"><b>Definition:</b> Enemies.c:24</div></div>
+<div class="ttc" id="_enemies_8h_html_a39ed02f60d706f61702f2f8bde1d8437"><div class="ttname"><a href="_enemies_8h.html#a39ed02f60d706f61702f2f8bde1d8437">moveRandom</a></div><div class="ttdeci">void moveRandom(Enemy *enemy, tile **bitmap, int gridSize)</div><div class="ttdef"><b>Definition:</b> Enemies.c:74</div></div>
+<div class="ttc" id="_enemies_8h_html_ab902a925519b159e83619ce1685ee9dc"><div class="ttname"><a href="_enemies_8h.html#ab902a925519b159e83619ce1685ee9dc">manageEnemiesAndScore</a></div><div class="ttdeci">int manageEnemiesAndScore(Enemy enemyArray[MAX_ENEMIES_PER_MAP], Player *player, tile **bitmap, int howMany, int gridSize, int reset)</div><div class="ttdef"><b>Definition:</b> Enemies.c:184</div></div>
+<div class="ttc" id="_enemies_8h_html_a9f94c8a31f6cab79db629884ff69fae0"><div class="ttname"><a href="_enemies_8h.html#a9f94c8a31f6cab79db629884ff69fae0">moveCharger</a></div><div class="ttdeci">void moveCharger(Enemy *enemy, Player *player, tile **bitmap, int gridSize)</div><div class="ttdef"><b>Definition:</b> Enemies.c:118</div></div>
+<div class="ttc" id="_enemies_8h_html_a7deeed86cc3886f6f9b0e4916ab6ad84"><div class="ttname"><a href="_enemies_8h.html#a7deeed86cc3886f6f9b0e4916ab6ad84">initEnemies</a></div><div class="ttdeci">void initEnemies(Enemy enemyArray[MAX_ENEMIES_PER_MAP], tile *bitmap, int howMany, int gridSize)</div><div class="ttdef"><b>Definition:</b> Enemies.c:9</div></div>
+<div class="ttc" id="struct_player_html"><div class="ttname"><a href="struct_player.html">Player</a></div><div class="ttdef"><b>Definition:</b> enumsStructsMacros.h:211</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

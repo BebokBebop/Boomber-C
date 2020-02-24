@@ -1,0 +1,525 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage[T1]{fontenc}              
+\usepackage[utf8]{inputenc}                                      
+\usepackage[OT4]{fontenc}               
+\usepackage[polish]{babel}                           
+\selectlanguage{polish}
+\usepackage{indentfirst} 
+\usepackage[dvips]{graphicx}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{hyperref} 
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{ifpdf}
+\usepackage{mathtext} % polskie znaki w trybie matematycznym
+%\makeindex  % utworzenie skorowidza (w dokumencie pdf)
+\usepackage{lmodern}
+%\usepackage[osf]{libertine}
+\usepackage{filecontents}
+
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+
+\newcounter{nextYear}
+\setcounter{nextYear}{\the\year}
+\stepcounter{nextYear}
+
+% rozszerzenie nieco strony
+%\setlength{\topmargin}{-1cm} \setlength{\textheight}{24.5cm}
+%\setlength{\textwidth}{17cm} \addtolength{\hoffset}{-1.5cm}
+%\setlength{\parindent}{0.5cm} \setlength{\footskip}{2cm}
+%\linespread{1.2} % odstep pomiedzy wierszami
+
+\ifpdf
+\DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+
+\newcommand{\tl}[1]{\textbf{#1}} 
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} % usuwanie bieżących ustawień
+\fancyhead[LE,RO]{\small\bfseries\thepage}
+\fancyhead[LO]{\small\bfseries\rightmark}
+\fancyhead[RE]{\small\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} % pionowy odstęp na kreskę
+\fancypagestyle{plain}{%
+\fancyhead{} % usuń p. górne na stronach pozbawionych numeracji
+\renewcommand{\headrulewidth}{0pt} % pozioma kreska
+}
+
+\lstset{%
+language=C++,%
+commentstyle=\textit,%
+identifierstyle=\textsf,%
+keywordstyle=\sffamily\bfseries, %
+%captionpos=b,%
+tabsize=3,%
+frame=lines,%
+numbers=left,%
+numberstyle=\tiny,%
+numbersep=5pt,%
+breaklines=true,%
+morekeywords={std,vector,string,ref,params_result},%
+escapeinside={(*@}{@*)},%
+%basicstyle=\footnotesize,%
+%keywords={double,int,for,if,return,vector,matrix,void,public,class,string,%
+%float,sizeof,char,FILE,while,do,const}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% mala zmiana sposobu wyswietlania notek bocznych
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{%
+  {\linespread{0.85}\normalfont\scriptsize%
+%   \oldmarginpar[\vspace{-1.5ex}\raggedleft\scriptsize\color{black}\textsf{#1}]%    left pages
+%                {\vspace{-1.5ex}\raggedright\scriptsize\color{black}\textsf{#1}}% right pades
+\oldmarginpar[\hspace{1cm}\begin{minipage}{3cm}\raggedleft\scriptsize\color{black}\textsf{#1}\end{minipage}]%    left pages
+{\hspace{0cm}\begin{minipage}{3cm}\raggedright\scriptsize\color{black}\textsf{#1}\end{minipage}}% right pages
+}%
+}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+%%%% TODO LIST GENERATOR %%%%%%%%%
+
+%%%%%%%%%%%%%% END OF TODO LIST GENERATOR %%%%%%%%%%%
+
+
+
+\begin{document}
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%55
+
+
+\frenchspacing
+\clearpage
+
+\thispagestyle{empty}
+\begin{center}
+{\Large\sf Politechnika Śląska w Gliwicach \\  % Alma Mater
+Wydział Automatyki, Elektroniki i Informatyki
+
+}
+
+\vfill
+
+%\includegraphics[width=0.15\textwidth]{graf/polsl.pdf}
+
+\vfill\vfill
+
+{\Huge\sffamily\bfseries Programowanie Komputerów 2} \\ % tu podać nazwę przedmiotu
+
+\vfill\vfill
+
+{\LARGE\sf  Bomberman: \\gra komputerowa}  % a tu temat laborki :-))
+
+
+\vfill \vfill\vfill\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{tabular}{ll}
+	\toprule
+	autor                       & Hubert Przegendza            \\
+	prowadzący                  & dr inż. Adam Gudyś\\
+	rok akademicki              & 2017/2018  \\
+	kierunek                    & informatyka                  \\
+	rodzaj studiów              & SSI                          \\
+	semestr                     & 2                            \\
+	termin laboratorium         & czwartek P, 10:00 -- 11:30 \\
+	grupa                       & 2                            \\
+	sekcja                      & 2                            \\
+	termin oddania sprawozdania & 2018-06-20      \\
+	data oddania sprawozdania   & 2018-06-20              \\
+	\bottomrule 
+\end{tabular}
+
+\end{center}
+%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Treść zadania}
+Napisać grę typu Bomberman.
+%%%%%%%%%%%%%%%%%%%%%
+\section{Analiza, projektowanie}
+Przed przystąpieniem do pisania kodu należy zrozumieć co znaczy ''gra typu Bomberman''. Jest to gra, w której gracz porusza się w czterech kierunkach (góra, dół, lewo, prawo) 
+po dwuwymiarowej prostokątnej mapie. Na tej mapie znajdują się przeszkody, przez które gracz przejść nie może - pudła i filary. 
+Gracz może postawić w miejscu na mapie, w którym aktualnie się znajduje, bombę, która po pewnym czasie eksploduje, przez co na mapie powstanie krzyż ognia ze środkiem w miejscu, w którym bomba się znajdowała. Wielkość tego krzyża zależy od posiadanych przez gracza ulepszeń. 
+
+Ulepszenia znajdują się w niektórych pudełkach i ujawniane są po jego zniszczeniu. Pudło ulega zniszczeniu, kiedy znajdzie się w zasięgu eksplozji bomby. Jeżeli gracz znajdzie się w zasięgu eksplozji bomby, to zostaje zraniony, przez co może przegrać grę. Jeżeli jednak gracz posiada ulepszenie tarczy, to może przetrwać taką eksplozję kosztem utracenia po chwili tego ulepszenia. 
+
+Poza ulepszeniami zasięgu bomby oraz tarczy, w tym projekcie zawarte są jeszcze ulepszenie zwiększenia ilości możliwych do postawienia bomb oraz ulepszenie dające możliwość graczowi ''kopnięcia bomby'', czyli wprawieniu jej przez kolizję z graczem w ruch aż do napotkania przeszkody (np. filar, pudło, przeciwnik, inna bomba...).
+
+Na mapie mogą znajdować się również przeciwnicy. Nie mogą oni stawiać bomb ani zbierać ulepszeń, ale jeśli gracz dotknie któregoś z nich, to zostanie zraniony, chyba że posiada on ulepszenie tarczy. Przeciwnicy różnią się od siebie swoim algorytmem poruszania się. Różne gry tego typu mają różne typy przeciwników (w tym projekcie zdecydowano skorzystać z 3 algorytmów opisanych dalej w rozdziale w podpunkcie ''Algorytmy'').
+
+Aby wygrać grę lub jej etap, należy pokonać wszystkich przeciwników, czyli sprawić, by znaleźli się w zasięgu eksplozji bomby gracza i wejść do portalu, który pojawia się na środku mapy, kiedy nie ma juz aktywnych przeciwników.
+%%%%%%%%%%%%%%%%%%%%%
+\newline
+\subsection {Struktury}
+W projekcie większość danych jest przechowywane w strukturach statycznych, ponieważ okazały się one czystsze, wygodniejsze i szybsze od struktur dynamicznych, które wymagały wiele funkcji do ich obsługi, a korzystanie z nich wiązało się z dużą ilością pogorszających czytelność znaków potrzebnych do obsługi wskaźników. Wadą tego rozwiązania jest to, że nie można płynnie zmieniać niektórych wielkości. W tym projekcie wychodzenie poza pewien określony zakres w większości przypadków jest nieprawdopodobne lub wręcz niemożliwe, więc struktury dynamiczne tracą na przydatności. 
+
+Np. gracz nie jest w stanie sprawić, by na mapie znajdowało się więcej niż 20 bomb na raz, więc przechowywanie danych bomb w dynamicznej strukturze nie ma przewagi wobec przechowywania ich w statycznej tablicy o wielkości 20.
+
+Dynamicznie zdecydowano się np. przechowywać dane mapy, dzięki czemu można zmienić jej rozmiar bez modyfikacji kodu (np. przez parametr wywołania w konsoli).
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Algorytmy}
+W projekcie zdecydowano się skorzystac z trzech typów przeciwników, $blind$, $random$ oraz $charger$ i każdy z nich korzysta z osobnego algorytmu poruszania się.
+
+Przeciwnik typu $blind$ porusza się po linii prostej aż natrafi na przeszkodę, po czym zmienia kierunek najpierw na o kąt prosty w lewo, a jeśli nie może się poruszać w tym kierunku, to o kąt prosty w prawo. Jeśli nie może się  ruszyć i w tym kierunku, to zawraca, tj. zmienia kierunek na przeciwny względem oryginalnego.
+
+Przeciwnik typu $random$ porusza się w przypadkowym kierunku, przy czym jeśli nie może się poruszyć w nowo obranym kierunku, to zmienia swój kierunek na przypadkowy. Robi tak okreloną ilość razy, po czym jeśli dalej się nie poruszył, to stoi w miejscu aż znowu będzie przesuwany.
+
+Ostatni przeciwnik, typu $charger$, porusza się tak samo jak przeciwnik typu $blind$ o ile w jego polu widzenia nie znajdzie się gracz, tzn. nie znajdzie się w tej samej kolumnie lub wierszu i nie będzie między nimi filaru (filar zasłania gracza). Jeśli w polu widzenia tego przeciwnika znajdzie się gracz, to ten przeciwnik zmienia swój kolor oraz tryb poruszania się. Teraz zacznie poruszać się z o wiele większą prędkością w kierunku, w którym ostatni raz zauważył gracza, niszcząc po drodze napotkane pudełka. Wraca do poprzedniego trybu dopiero wtedy, kiedy w jego polu widzenia nie ma gracza oraz jednocześnie napotka na przeszkodę, której nie potrafi przejść (tj. postawiona bomba, inny przeciwnik, koniec mapy).
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Specyfikacja treści}
+Ograniczoność specyfikacji problemu narzuca przeanalizowanie typu gry ''Bomberman'' i dopasowanie funkcjonalności projektu do potencjalnych oczekiwań konsumenta, np. czy użytkownik spodziewa się istnienia w grze ulepszeń, a jeśli tak to jakie lub jakich przeciwnikow się spodziewa.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Specyfikacja zewnętrzna | \\ Instrukcja Obsługi}
+Program można uruchomić z linii poleceń z wykorzystaniem następujących przełączników (kolejność przełączników jest dowolna):
+
+\begin{tabular}{ll}
+\texttt{-h} lub {-help} spowoduje wypisanie w konsoli pomocy nt. obsługi przełączników\\ oraz zakończenie działania programu\\
+\texttt{-s} ustawi wielkość boku mapy gry, gdzie $s$ to liczba nieparzysta (dla estetyki)\\
+\texttt{-e} ilość przeciwników $e \in [1, s^2 * 0.75]$  i $e \in [1, 15 ]$\\
+\texttt{-b} ilość pudełek $b \in [0, s^2 * 0.75 - e]$\\ 
+\texttt{-u} ilość ulepszeń $u \in [0, b]$\\ 
+\texttt{-t} czas gry - liczba naturalna\\
+\texttt{-d} tryb debugowy $d = 0$  lub $d = 1$\\
+\end{tabular}
+
+\vspace{5mm} %5mm vertical space
+Przykładowe użycie:
+\begin{verbatim}
+Boomber.exe -s 11 -e 4 -b 40 -t 60 -d 1 
+\end{verbatim}
+włączy grę z mapą o rozmiarze 11, ilością pudełek = 40, ilością przeciwników = 4, czasem gry 60sec i w trybie debugowym.
+
+\vspace{5mm} %5mm vertical space
+Jeżeli przełączniki zostaną wykorzystane w zły sposób, to komunikat:
+\begin{verbatim}
+"Zle uzycie. 
+Wpisz: 
+"[Nazwa_Programu] -h"  lub 
+"[Nazwa_Programu] help", 
+zeby otrzymac pomoc." 
+\end{verbatim}
+zostanie wypisany do konsoli, a wartości zostaną ustawione domyślnie (opisane w specyfikacji wewnętrznej).
+
+\vspace{5mm} %5mm vertical space
+Użycie przełącznika ''-h'' lub ''help'' spowoduje wyświetlenie w konsoli komunikatu: 
+\begin{verbatim}
+"Wpisz "[Nazwa_Programu] -e [ilosc przeciwnikow (15 > x > 1)] 
+-b [ilosc pudelek (< 3/4 * (wielkosc mapy)^2) - ilosc przeciwnikow)]
+-u [ilosc ulepszen (< ilosc pudelek]
+-s [wielkosc mapy (>=7)]
+-t [czas gry w sekundach] 
+-d [debug mode =0 || =1]""
+\end{verbatim}
+Jeżeli podana po przełączniku wartość okaże się nie do zrealizowania (zmienne mocno zależą od siebie), to na jej miejsce zostanie ustawiona wartość domyślnie, o czym zostanie wypisana informacja w konsoli.
+
+Użycie któregoś z przełączników więcej niż raz spowoduje wyświetlenie komunikatu 
+\begin{verbatim}
+"przełącznik "-x" został użyty więcej niż jeden raz",
+\end{verbatim}
+gdzie ''-x'', to owy przełącznik.
+Należy wtedy upewnić się, że przełącznik ''-x'' jest użyty tylko raz.
+
+\vspace{5mm} %5mm vertical space
+Użycie wartości, która nie może być zrealizowana przez program, spowoduje wywietlenie komunikatu 
+\begin{verbatim}
+">wartosc po "-x" jest poza zakresem.	Uzyto wartosci domyslnej"
+\end{verbatim}
+po czym, zostaną ustawione wartości domyślne.
+
+\vspace{5mm} %5mm vertical space
+Użycie błędnej wartości, która nie może być rozpoznana przez program jako liczba, spowoduje wywietlenie komunikatu 
+\begin{verbatim}
+">wartosc po "-x" nie jest poprawna liczba.	Uzyto domyslnej wartosci".
+\end{verbatim}
+po czym, zostaną ustawione wartości domyślne. Należy wtedy upewnić się, że podano po przełączniku ''-x'' poprawną liczbę.
+
+\vspace{5mm} %5mm vertical space
+Nie użycie żadnego przełącznika spowoduje wyświetlenie komunikatu 
+\begin{verbatim}
+"Nie wykryto przelacznikow. Uzyto wartosci domyslnych".
+\end{verbatim}
+po czym, zostaną ustawione wartości domyślne.
+%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{Wygląd okna}
+Po stworzeniu okna pojawi się na nim okno pauzy z wiadomością 
+\begin{verbatim}
+''HELLO! PRESS SPACE TO START','
+\end{verbatim} 
+zachęcającą do rozpoczęcia gry. Aby to zrobić, należy nacisnąć klawisz spacja. Następnie w oknie gry pojawi się mapa oraz znajdująca się po prawej stronie okna tablica z danymi. 
+
+W tablicy z danymi wypisane są ilość punktów gracza pod tytułem ''SCORE'', największa dotychczasowa ilość punktów, zwana dalej ''highscore'', pod tytułem ''HIGHSCORE'' oraz pozostała ilość czasu pod tytułem ''TIME''. 
+
+Lewa część okna to tzw. mapa gry. Mogą znajdować się na niej:
+\begin{enumerate}
+ \item ścieżka - ciemnoszare pola, wszystko może przez nie przejść oraz mogą po nich przesuwać się bomby,
+ \item pudełka - jasnoszare pola, nie można przez nie przejść, można je zniszczyć wybuchem bomby,
+ \item filary - białe pola, nie można przez nie przejść i nie da się ich zniszczyć,
+ \item przeciwnicy:
+\begin{enumerate}
+\item żółty kolor = przeciwnik typu $blind$,
+\item turkusowy = $random$,
+\item ciemno i jasno fioletowy = $charger$.
+\end{enumerate}
+ \item bomby - im bliżej do wybuchu, tym jaśniejsze i większe czerwone kwadraty, nic nie może przez nie przejść, poza graczem z ulepszeniem kopania bomb, po chwili wybuchają a w zasięgu wybuchu powstaje ogień,
+ \item ogień - żółte pola, wejście na nie zadaje obrażenia graczowi i przeciwnikom,
+ \item portal - animowany kafel na środku planszy w odcieniach niebieskiego, pojawia się po pokonaniu wszystkich przeciwników i wejście do niego oznacza wygranie planszy,
+ \item gracz - niebieski kwadrat, który pojawia się na pierwszym filarze z lewej z góry,
+ \item ulepszenia - romby o różnych kolorach: 
+\begin{enumerate}
+ \item czerwony - zebranie zwiększa ilość dostępnych bomb,
+\item żółty - zwiększa zasięg bomb,
+\item różowy - włącza możliwość kopania bomb,
+\item jasnoniebieski - daje graczowi tarczę.
+\end{enumerate}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Klawisze}  
+
+ \begin{enumerate}
+\item Aby poruszać się po mapie należy, korzystać z klawiszy strzałek klawiatury.
+\item Aby postawić bombę, należy nacisnąć klawisz spacji.
+\item Aby włączyć pauzę gry, należy nacisnąć klawisz 'P'. Spowoduje to zatrzymanie gry oraz pokazanie ekranu pauzy z treścią:
+\begin{verbatim}
+''GAME PAUSED PRESS SPACE TO UNPAUSE 
+SCORE XXXX'', 
+\end{verbatim}
+gdzie XXXX to aktualna ilość punktów gracza. Po naciśnięciu klawisza spacji, okno pauzy zniknie, a gra zostanie kontynuowana (bez utraty czasu).
+\item Aby wyłączyć grę, należy nacisnąć klawisz Escape.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{ Mechanizm gry}  
+\begin{enumerate}
+\item Punktacja: niszczenie pudełek przez gracza (10 punktów za pudełko), unicestwienie przeciwników (100pkt za $blind$, 200pkt za $random$ i 300pkt za $charger$), ukończenie poziomu i wejście do portalu (1000pkt) +  do punktów gracza dodaje się 10pkt * ilość pozostałego czasu gracza w sekundach. Jeżeli ilość punktów gracza przekroczy highscore, to do highscore zostaje przypisywana na bieżąco ilość punktów gracza.
+
+\item Liczba pod tytułem ''TIME'' to czas, w jakim należy ukończyć mapę. Jeżeli ta wartość  spadnie do zera, to gracz zacznie tracić 10\% punktów na sekundę, a jak ilość punktów spadnie poniżej 10, to gracz przegrywa grę. 
+
+\item Każdy przeciwnik, jeżeli znajdzie się w polu rażenia eksplozji bomby, zostanie unicestwiony.
+
+\item Jeżeli ulepszenie zostanie dotknięte przez przeciwnika lub znajdzie się ono w zasięgu eksplozji bomby, to zniknie.
+
+\item Zebranie ulepszenia polega na wejściu gracza na kafelek zawierający ulepszenie,
+
+\item Po zebraniu ulepszenia kopania bomb gracz może wejść na kafelek zawierający bombę, jeśli może ona być kopnięta, tj kafelek dalej znajduje się pusta przestrzeń - ścieżka. Kiedy bomba zostaje kopnięta, to porusza się zgodnie z kierunkiem kopnięcia aż do swojej eksplozji lub aż do napotkania przeszkody albo ognia (co sprawia, że bomba natychmiast wybucha).
+\item Kiedy bomba znajdzie się w zasięgu eksplozji innej bomby, to również eksploduje.
+
+\item Gracz przegrywa, gdy zostanie śmiertelnie zraniony przez przeciwnika, przez eksplozję bomby lub kiedy skończy mu się czas i punkty. Zmienia wtedy swój kolor na ciemnoczerwony i po chwili całe okno zajmuje okno pauzy z treścią:
+\begin{verbatim}
+''GAME OVER! PRESS SPACE TO RESTART 
+SCORE XXXX'',
+\end{verbatim}
+ gdzie XXXX to aktualna ilość punktów gracza. Po naciśnięciu klawisza spacji gra rozpocznie się na nowo, ulepszenia gracza zostaną zresetowane do wartości domyślnych, a jego ilość punktów wyzerowana.
+
+\item Wygranie plaszy nastąpi, kiedy gracz pokona wszystkich przeciwników i wejdzie w portal na środku mapy, który się wtedy pojawi. Zacznie się wtedy przelewanie pozostałego czasu gracza w sekundach do aktualnych punktów gracza. Kiedy przelew się zakończy, to po chwili pojawi się okno pauzy z treścią :
+\begin{verbatim}
+''YOU WON! PRESS SPACE TO GO ON 
+SCORE XXXX'',
+\end{verbatim}
+ gdzie XXXX to aktualna ilość punktów gracza. Po naciśnięciu klawisza spacji gra rozpocznie się na nowo, a gracz zachowa swoje ulepszenia i punkty.
+
+\item Highscore jest przechowywany w pliku ''high score.txt'' w formacie: 
+\begin{verbatim}
+''HIGHSCORE: XXXX'', 
+\end{verbatim}
+gdzie XXXX to wartość highscore.
+
+\item Jeżeli gra zostanie włączona w trybie ''debugMode'', to gracz ma dodatkowo dostęp do następujących funkcji:
+\begin{enumerate}
+\item klawisz ''S'' włączy lub wyłączy graczowi ulepszenie tarczy,
+
+\item klawisz ''K'' włączy lub wyłączy graczowi ulepszenie kopania bomb,
+
+\item klawisz ''LSHIFT'' zwiększy zasięg bomb gracza,
+
+\item klawisz ''RSHIFT'' zmniejszy zasięg bomb gracza,
+
+\item klawisz  ''LALT'' zwiększy ilość dostępnych dla gracza bomb,
+
+\item klawisz ''RALT'' zmniejszy ilość dostępnych dla gracza bomb,
+
+\item klawisz ''0'' otworzy portal niezależnie od ilości aktywnych przeciwników.
+\end{enumerate}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Specyfikacja wewnętrzna}\label{sec:sp-wew}
+Pomocnicza specyfikacja wewnętrzna wszystkich plików, funkcji, enumeratorów, makr i struktur znajduje się w załączniku do sprawozdania.
+Ważniejsze zmienne lokalne zostaną opisane w następujących tabelach
+
+\newpage
+{\Large plik \textbf{main.c}}
+\begin{center}
+\begin{tabularx}{\linewidth}{ |l|X| } 
+ \hline
+\textbf{ enemyArray }& 
+ zmienna typu \textbf{Enemy[MAX\_ENEMIES\_PER\_MAP]}. 
+Przechowuje dane wszystkich przeciwników. 
+\textbf{MAX\_ENEMIES\_PER\_MAP} to makro zdefiniowane w plik \textbf{enumsStructsMacros.h}. Określa maksymalną ilość przeciwników.\\ 
+
+ \hline
+\textbf{ player }&
+ zmienna typu \textbf{Player}. Struktura przechowująca dane gracza. Dane te są inicjalizowane w funkcji \textbf{initPlayer()} w pliku \textbf{player.c}.\\
+
+ \hline
+\textbf{ bitmap} & 
+zmienna typu \textbf{tile**}. Wskazuje na dwuwymiarową tablicę, która reprezentuje planszę gry. Jej wielkość jest określana przez parametr funkcji \textbf{main} lub ustawiona jest domyślnie. Pamięć zostaje zaalokowana w funkcji \textbf{allocateMap()} w pliku \textbf{mapMemAndGen.c}.\\ 
+
+ \hline
+\textbf{pauseType} & 
+zmienna typu \textbf{PauseScreenType}. Przechowuje informację, w jakim aktualnie gra jest w stanie pauzy. Jej wartość jest zmieniana w funkcjach \textbf{pauseGame()} oraz \textbf{unPauseGame()}, obydwie są w pliku \textbf{main.c}.\\
+
+\hline
+\textbf{listArray}&
+zmienna typu \textbf{int [6]}. Tablica zawiera w sobie indeksy stworzonych w programie \textbf{glLists} (list instrukcji rysujących). Jest zapełniana w funkcji \textbf{setGlLists()}, w pliku \textbf{draw.c} oraz opróżniana w funkcji \textbf{unSetGlLists()}, również w pliku \textbf{draw.c} \\
+
+\hline
+\textbf{portalOpened} &
+zmienna typu \textbf{int}. Jeśli portal nie został jeszcze otworzony, to wynosi 0. W przeciwnym przypadku wynosi 1.\\
+
+\hline 
+\textbf{dTime} &
+zmienna typu \textbf{double}. Przechowuje czas sprzed pauzy, aby można było do niego wrócić po wyjściu z pauzy. Zmiana jego wartości następuje w \textbf{pauseGame()}, a wykorzystuje się go do ustawienia czasu w funkcji \textbf{unPauseGame()}, obydwie są w pliku \textbf{main.c}.\\
+
+\hline
+\end{tabularx}
+\end{center}
+
+%% draw.c
+%\newpage
+
+{\Large plik \textbf{draw.c}}
+\begin{center}
+\begin{tabularx}{\linewidth}{ |l|X| } 
+
+\hline
+\textbf{lastTime}&
+zmienna statyczna typu \textbf{double}, znajdująca się w funkcji \textbf{checkPlayer()}. Przechowuje ostatni czas dokończenia okresowej animacji portalu.\\
+
+\hline
+\end{tabularx}
+\end{center}
+
+
+%% Enemies.c
+
+\newpage
+{\Large plik \textbf{Enemies.c}}
+\begin{center}
+\begin{tabularx}{\linewidth}{ |l|X| } 
+
+\hline
+\textbf{iteration}&
+zmienna statyczna typu \textbf{int}, znajdująca się w funkcji \textbf{moveBlind()}. Kontroluje zmianę kierunku przeciwnika typu \emph{blind}, np. dla \textbf{iteration = 0}, funkcja spróbuje poruszyć przeciwnika w lewo, a dla \textbf{iteration = 2}, zawróci go.\\
+
+\hline
+\textbf{time\_t}&
+zmienna statyczna typu \textbf{time\_t}, znajdująca się w funkcji \textbf{moveBlind()}. Służy do ustawienia ziarna generatora liczb psełdoprzypadkowych. Należy ustawić go tylko raz.\\
+
+\hline
+\textbf{seedOnce}&
+zmienna statyczna typu \textbf{int}, znajdująca się w funkcji \textbf{moveBlind()}. Upewnia się, że ziarno generatora liczb psełdoprzypadkowych (\textbf{srand(time(tt))}) zostanie ustawione tylko raz.\\
+
+\hline 
+\textbf{lastMoveTimeX, $X \in {1,2,3}$} &
+zmienna statyczna typu \textbf{double}, znajdująca się w funkcji \textbf{manageEnemiesAndScore()}. Przechowuje czas  kiedy ostatni raz został ruszony dany typ przeciwnika. Dla X = 1, dla przeciwnika typu \emph{blind}, X= 2 \emph{random}, a dla X=3 \emph{charger}.\\
+
+\hline
+\end{tabularx}
+\end{center}
+
+
+%% mapMemAndGen.c
+%\newpage
+
+{\Large plik \textbf{mapMemAndGen.c}}
+\begin{center}
+\begin{tabularx}{\linewidth}{ |l|X| } 
+
+\hline
+\textbf{time\_t}&
+zmienna statyczna typu \textbf{time\_t}, znajdująca się w funkcji \textbf{generateMap()}. Służy do ustawienia ziarna generatora liczb psełdoprzypadkowych. Należy ustawić go tylko raz.\\
+
+\hline
+\textbf{seedOnce}&
+zmienna statyczna typu \textbf{int}, znajdująca się w funkcji \textbf{generateMap()}. Upewnia się, że ziarno generatora liczb psełdoprzypadkowych (\textbf{srand(time(tt))}) zostanie ustawione tylko raz.\\
+
+\hline
+\end{tabularx}
+\end{center}
+
+%% player.c
+\newpage
+{\Large plik \textbf{player.c}}
+\begin{center}
+\begin{tabularx}{\linewidth}{ |l|X| } 
+
+\hline
+\textbf{lastTime}&
+zmienna statyczna typu \textbf{double}, znajdująca się w funkcji \textbf{checkPlayer()}. Można dzięki niej kontrolować zmiany spowodowane upływem czasu, bo przechowuje czas, kiedy ostatnia akcja została wykonana (np. kiedy ostatni raz odjęto punkty, żeby sprawdzić, czy nie powinno się znowu tego zrobić).\\
+
+\hline
+\textbf{wait}&
+zmienna statyczna typu \textbf{double}, znajdująca się w funkcjach \textbf{waitForGame\_over()} oraz \textbf{waitForNextStageAndSumScore()}. Przechowuje czas rozpoczęcia wydarzenia (przegrania lub wygrania gry), dzięki czemu można sprawdzić, czy minęło dość dużo czasu, by zakończyć grę.\\
+
+\hline
+\end{tabularx}
+\end{center}
+
+%% TestArg.c
+%%\newpage
+
+{\Large plik \textbf{TestArg.c}}
+\begin{center}
+\begin{tabularx}{\linewidth}{ |l|X| } 
+
+\hline
+\textbf{badUse} &
+zmienna typu \textbf{char*}. Przechowuje wiadomość jaką należy wypisać do konsoli w przypadku złego użycia parametrów funkcji \textbf{main()}.\\
+
+\hline
+\textbf{help} &
+zmienna typu \textbf{char*}. Przechowuje wiadomość jaką należy wypisać do konsoli w przypadku użycia przełącznika ''-h'' lub ''-help'' jako parametr funkcji \textbf{main()}.\\
+
+\hline
+\textbf{zleWartosci} &
+zmienna typu \textbf{zleWartosci[7]}. \textbf{zleWartosci[$i$]} przechowuje wartości wskazujące na rodzaj złej wartości $i$-tego parametru.1 dla wartości nierozpoznanej jako liczba, 2 dla wartości spoza zakresu.\\
+
+\hline
+\textbf{zleWartosci} &
+zmienna typu \textbf{int[7]}. \textbf{zleWartosci[$i$]} przechowuje wartości wskazujące na rodzaj złej wartości $i$-tego parametru funkcji \textbf{main()}. 1 dla wartości nierozpoznanej jako poprawna liczba, 2 dla wartości spoza zakresu.\\
+
+\hline
+\textbf{ileRazyPrzelacznik} &
+zmienna typu \textbf{int[7]}. \textbf{ileRazyPrzelacznik[$i$]} przechowuje ilość wystąpień $i$-tego przełącznika w parametrach funkcji \textbf{main()}.\\
+
+
+\hline
+\end{tabularx}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Testowanie }\label{sec:Testowanie}
+Program został przetestowany dla róznych ilości przeciwników, pudełek, ulepszeń oraz dla różnych rozmiarów mapy. Nie znaleziono przy tym żadnych błędów, co wskazuje na to, że wszystkie zmienne są dobrze dopasowywane do siebie i kontrolowane wewnątrz programu.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Wnioski}
+Projekt ten nie zawiera bardzo skomplikowanych funkcji i algorytmów, ale ilość elementów do obsługi szybko zaplącze kod nieuważnego programisty. Aby iść do przodu, należało z dyscypliną dbać o porządek w kodzie i plikach i dzielić kod na sensowne i łatwe do zrozumienia funkcje, które wykonują tylko to, co sugeruje ich nazwa. Tylko wtedy praca, zamiast frustracji z powodu narastającego chaosu i błędów, przynosiła przyjemność.
+\end{document}
